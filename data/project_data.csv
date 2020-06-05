@@ -1,0 +1,745 @@
+Rank,College Name,Location,Median SAT,Median ACT,Est. price 2019-20 without aid,Est. price 2019-20 with avg. grant,% of students who get any grants,Average student debt,Early career earnings
+1,University of California-Irvine,Irvine. CA, 1260,29, $35.400, $14.900, 66%, $16.500, $57.700
+2,CUNY Bernard M. Baruch College,New York. NY, 1270,NA, $33.200, $4.900, 55%, $10.720, $57.100
+3,Princeton University,Princeton. NJ, 1500,33, $69.100, $17.400, 58%, $7.500, $72.700
+4,University of California-Los Angeles,Los Angeles. CA, 1340,32, $35.400, $15.800, 59%, $15.000, $60.000
+5,University of California-Davis,Davis. CA, 1250,29, $37.300, $17.600, 67%, $14.000, $59.400
+6,Stanford University,Stanford. CA, 1470,34, $72.200, $17.700, 60%, $11.450, $76.500
+7,Massachusetts Institute of Technology,Cambridge. MA, 1530,34, $70.400, $23.700, 68%, $17.130, $83.600
+8,University of Michigan-Ann Arbor,Ann Arbor. MI, 1420,32, $30.800, $17.500, 52%, $19.150, $62.000
+9,University of California-San Diego,La Jolla. CA, 1310,30, $33.600, $15.600, 58%, $17.500, $61.300
+10,University of Virginia,Charlottesville. VA, 1410,31, $33.600, $17.700, 42%, $19.000, $62.300
+11,University of California-Berkeley,Berkeley. CA, 1370,32, $38.600, $19.400, 57%, $13.200, $68.300
+12,University of California-Riverside,Riverside. CA, 1200,26, $36.200, $13.200, 81%, $19.000, $54.000
+13,California State University-Long Beach,Long Beach. CA, 1130,23, $25.100, $10.300, 70%, $15.000, $51.100
+14,Harvard University,Cambridge. MA, 1530,34, $72.700, $18.200, 43%, $6.100, $72.600
+15,Vanderbilt University,Nashville. TN, 1510,34, $70.400, $24.900, 65%, $14.500, $63.800
+16,California Institute of Technology,Pasadena. CA, 1560,35, $72.000, $26.100, 61%, $12.180, $83.400
+17,Yale University,New Haven. CT, 1520,34, $74.500, $19.300, 52%, $12.000, $68.300
+18,Texas A & M University-College Station,College Station. TX, 1250,28, $29.700, $20.900, 54%, $18.520, $59.000
+19,Duke University,Durham. NC, 1460,33, $75.000, $23.500, 53%, $9.200, $68.700
+20,University of Illinois at Urbana-Champaign,Champaign. IL, 1420,29, $31.400, $17.800, 51%, $20.130, $61.000
+21,University of Florida,Gainesville. FL, 1320,30, $22.100, $16.300, 83%, $16.200, $54.200
+22,California State University-Fullerton,Fullerton. CA, 1100,22, $28.600, $9.100, 65%, $14.800, $49.400
+22,University of Washington-Seattle Campus,Seattle. WA, 1310,30, $27.800, $10.100, 44%, $15.000, $59.900
+24,Rice University,Houston. TX, 1540,34, $66.000, $25.800, 61%, $11.200, $69.200
+25,Massachusetts Maritime Academy,Buzzards Bay. MA, 1120,23, $26.800, $15.500, 48%, $26.930, $67.200
+26,Washington and Lee University,Lexington. VA, 1420,32, $68.900, $26.700, 57%, $19.920, $63.200
+27,Georgia Institute of Technology,Atlanta. GA, 1310,32, $30.000, $16.900, 62%, $23.750, $70.800
+28,The University of Texas at Austin,Austin. TX, 1340,30, $26.600, $15.300, 50%, $21.500, $59.100
+29,California State University-Northridge,Northridge. CA, 1020,20, $23.100, $6.400, 70%, $13.830, $49.600
+30,University of California-Santa Barbara,Santa Barbara. CA, 1300,31, $37.700, $17.200, 62%, $16.300, $57.300
+30,University of Notre Dame,Notre Dame. IN, 1450,33, $72.500, $29.300, 62%, $21.430, $64.700
+32,University of Pennsylvania,Philadelphia. PA, 1490,34, $74.900, $26.200, 53%, $12.990, $70.100
+33,Binghamton University,Vestal. NY, 1360,30, $27.300, $17.900, 51%, $19.500, $58.900
+34,Virginia Polytechnic Institute and State University,Blacksburg. VA, 1270,28, $27.400, $20.000, 49%, $23.250, $60.900
+35,CUNY Brooklyn College,Brooklyn. NY, 1130,NA, $36.500, $4.400, 61%, $10.500, $50.100
+36,California State University-Los Angeles,Los Angeles. CA, 990,18, $26.000, $4.200, 83%, $12.500, $49.200
+37,Swarthmore College,Swarthmore. PA, 1460,33, $71.900, $21.800, 58%, $19.500, $63.800
+38,Bates College,Lewiston. ME, NA,NA, $71.900, $24.900, 46%, $14.120, $57.500
+39,Williams College,Williamstown. MA, 1480,33, $73.800, $20.800, 54%, $14.490, $64.000
+40,North Carolina State University at Raleigh,Raleigh. NC, 1310,29, $24.800, $14.300, 53%, $20.710, $55.800
+41,California State Polytechnic University-Pomona,Pomona. CA, 1120,24, $27.200, $13.500, 67%, $18.500, $56.000
+42,University of Connecticut,Storrs. CT, 1300,29, $32.400, $20.000, 61%, $21.500, $57.700
+43,University of Maryland-College Park,College Park. MD, 1380,31, $27.700, $18.400, 49%, $19.500, $60.000
+43,College of the Holy Cross,Worcester. MA, NA,NA, $69.200, $28.800, 56%, $28.000, $58.800
+45,College of William and Mary,Williamsburg. VA, 1390,31, $39.000, $18.600, 46%, $19.340, $57.100
+46,University of Wisconsin-Madison,Madison. WI, 1370,29, $26.800, $17.000, 41%, $22.240, $55.700
+47,Stony Brook University,Stony Brook. NY, 1310,29, $26.600, $15.300, 57%, $18.960, $57.000
+48,The College of New Jersey,Ewing. NJ, 1250,NA, $36.000, $24.400, 39%, $23.250, $57.200
+49,Virginia Military Institute,Lexington. VA, 1190,26, $32.000, $17.200, 72%, $23.900, $63.900
+50,Rutgers University-New Brunswick,New Brunswick. NJ, 1300,NA, $33.000, $17.100, 50%, $22.250, $57.800
+51,California State University-Fresno,Fresno. CA, 1010,19, $21.300, $6.300, 75%, $14.370, $49.800
+52,University of North Carolina at Chapel Hill,Chapel Hill. NC, 1370,31, $26.700, $11.800, 52%, $16.660, $53.500
+53,CUNY John Jay College of Criminal Justice,New York. NY, 1060,NA, $35.400, $5.200, 63%, $10.000, $44.600
+54,Colgate University,Hamilton. NY, 1410,32, $73.000, $23.700, 48%, $16.130, $65.000
+55,Purdue University,West Lafayette. IN, 1270,28, $23.800, $12.900, 50%, $20.430, $60.200
+56,California State University-Chico,Chico. CA, 1080,22, $25.500, $15.100, 62%, $16.750, $55.100
+57,James Madison University,Harrisonburg. VA, 1180,26, $27.300, $17.200, 34%, $20.500, $55.800
+58,Union College,Schenectady. NY, NA,NA, $71.700, $39.600, 77%, $25.830, $60.900
+59,Michigan State University,East Lansing. MI, 1210,26, $29.700, $17.800, 52%, $25.200, $53.900
+60,Pomona College,Claremont. CA, 1450,32, $72.800, $18.800, 60%, $13.400, $60.500
+61,Georgetown University,Washington. DC, 1440,32, $74.800, $29.300, 40%, $15.490, $63.700
+62,Northwestern University,Evanston. IL, 1490,33, $76.200, $27.900, 54%, $17.500, $61.500
+63,California State University-Monterey Bay,Seaside. CA, 1070,21, $24.400, $12.000, 69%, $13.750, $48.700
+64,George Mason University,Fairfax. VA, 1200,27, $30.500, $19.900, 49%, $19.500, $57.200
+64,Amherst College,Amherst. MA, 1480,33, $74.500, $20.800, 59%, $13.000, $62.300
+66,Cooper Union for the Advancement of Science and Art,New York. NY, 1420,31, $67.900, $30.400, 100%, $14.750, $65.900
+67,Lafayette College,Easton. PA, 1350,30, $71.700, $27.900, 51%, $24.790, $64.200
+68,California State University-Stanislaus,Turlock. CA, NA,NA, $21.500, $7.200, 82%, $14.220, $48.000
+69,University of Delaware,Newark. DE, 1230,27, $29.000, $17.400, 63%, $24.250, $56.700
+70,California State University-San Bernardino,San Bernardino. CA, 1000,19, $25.300, $9.300, 81%, $15.000, $47.900
+71,SUNY College of Environmental Science and Forestry,Syracuse. NY, 1230,26, $28.500, $19.400, 76%, $19.200, $51.800
+72,Brown University,Providence. RI, 1490,33, $74.200, $27.400, 46%, $16.130, $65.400
+73,University of Illinois at Chicago,Chicago. IL, 1210,23, $32.000, $12.700, 65%, $18.110, $55.000
+74,San Diego State University,San Diego. CA, 1190,26, $29.500, $14.300, 52%, $15.000, $53.400
+75,California Polytechnic State University-San Luis Obispo,San Luis Obispo. CA, 1290,29, $28.400, $20.300, 52%, $18.630, $63.500
+75,Montclair State University,Montclair. NJ, 1070,NA, $31.700, $16.300, 48%, $23.000, $49.100
+77,University of Chicago,Chicago. IL, 1530,34, $79.100, $37.200, 63%, $15.900, $61.600
+78,Clemson University,Clemson. SC, 1310,29, $30.900, $20.000, 73%, $21.500, $56.300
+79,Boston College,Chestnut Hill. MA, 1410,32, $73.700, $29.100, 45%, $19.000, $61.600
+80,National Louis University,Chicago. IL, NA,NA, $33.100, $16.400, 78%, $19.500, $47.300
+81,Columbia University in the City of New York,New York. NY, 1490,33, $77.500, $24.400, 58%, $21.410, $69.200
+82,Bowdoin College,Brunswick. ME, NA,NA, $71.100, $26.100, 50%, $18.650, $59.700
+82,Washington University in St Louis,Saint Louis. MO, 1520,33, $75.200, $29.700, 48%, $19.500, $62.700
+84,University of Minnesota-Twin Cities,Minneapolis. MN, 1380,29, $28.700, $17.900, 61%, $20.000, $55.800
+85,SUNY at Albany,Albany. NY, 1170,24, $26.800, $17.200, 61%, $20.500, $51.500
+86,St. Joseph's College-New York,Brooklyn. NY, 960,20, $40.800, $17.200, 86%, $20.010, $45.700
+87,Davidson College,Davidson. NC, 1390,32, $69.600, $30.300, 72%, $18.220, $55.000
+88,Bentley University,Waltham. MA, 1300,29, $69.100, $39.100, 65%, $26.000, $64.600
+89,Wellesley College,Wellesley. MA, 1450,32, $72.100, $21.600, 59%, $10.000, $56.600
+90,Tufts University,Medford. MA, 1480,33, $73.700, $31.400, 41%, $17.500, $63.200
+91,Cornell University,Ithaca. NY, 1470,33, $73.400, $33.600, 53%, $12.740, $68.200
+92,Citadel Military College of South Carolina,Charleston. SC, 1120,23, $30.000, $18.200, 63%, $22.490, $58.800
+93,California State University-Channel Islands,Camarillo. CA, NA,NA, $29.900, $15.800, 69%, $15.000, $49.300
+94,Barnard College,New York. NY, 1410,32, $74.500, $25.300, 46%, $18.000, $56.800
+95,Dartmouth College,Hanover. NH, 1500,32, $75.000, $23.800, 54%, $14.820, $68.900
+96,California State University-Dominguez Hills,Carson. CA, NA,NA, $23.400, $5.300, 79%, $13.740, $47.400
+97,Indiana University-Bloomington,Bloomington. IN, 1250,28, $25.500, $13.300, 61%, $21.500, $52.200
+98,Wake Forest University,Winston-Salem. NC, NA,NA, $72.200, $25.600, 48%, $23.810, $58.200
+99,University at Buffalo,Buffalo. NY, 1170,26, $27.300, $17.200, 55%, $19.500, $52.600
+100,CUNY Queens College,Queens. NY, 1140,NA, $29.600, $5.100, 51%, $10.700, $50.900
+101,Claremont McKenna College,Claremont. CA, 1430,32, $74.900, $30.600, 46%, $14.500, $66.800
+102,Florida State University,Tallahassee. FL, 1260,28, $22.700, $17.600, 88%, $20.250, $49.000
+103,University of California-Santa Cruz,Santa Cruz. CA, 1250,29, $37.600, $17.900, 69%, $19.700, $56.100
+104,San Jose State University,San Jose. CA, 1110,23, $29.400, $14.800, 61%, $15.000, $61.300
+104,Ramapo College of New Jersey,Mahwah. NJ, 1140,24, $32.200, $17.700, 42%, $22.500, $50.100
+106,St Lawrence University,Canton. NY, 1290,28, $71.300, $36.500, 96%, $26.790, $53.800
+107,Towson University,Towson. MD, 1130,23, $27.500, $16.300, 49%, $17.750, $49.800
+108,Iowa State University,Ames. IA, 1290,25, $21.500, $14.900, 69%, $23.260, $54.900
+109,University of Massachusetts-Amherst,Amherst. MA, 1270,29, $31.400, $22.700, 71%, $23.450, $55.800
+110,CUNY Lehman College,Bronx. NY, 1040,NA, $28.300, $3.100, 59%, $9.990, $46.600
+111,Lehigh University,Bethlehem. PA, 1350,31, $68.900, $28.700, 50%, $23.580, $67.200
+112,California State University Maritime Academy,Vallejo. CA, NA,NA, $29.300, $15.600, 52%, $26.000, $67.500
+113,University of Richmond,Richmond. VA, 1370,31, $67.800, $26.200, 63%, $21.060, $57.900
+114,Juniata College,Huntingdon. PA, NA,NA, $60.800, $27.900, 100%, $27.000, $50.100
+115,CUNY City College,New York. NY, 1140,NA, $30.600, $4.400, 64%, $11.580, $53.000
+116,College of Saint Benedict,Saint Joseph. MN, 1120,25, $59.400, $28.700, 100%, $27.000, $47.900
+117,University of Iowa,Iowa City. IA, 1260,26, $23.600, $15.800, 63%, $21.500, $52.500
+117,University of New Hampshire,Durham. NH, 1170,26, $34.500, $24.400, 61%, $27.000, $52.600
+119,University of Georgia,Athens. GA, 1290,29, $27.600, $17.000, 85%, $18.750, $52.600
+120,Carnegie Mellon University,Pittsburgh. PA, 1500,34, $73.200, $31.800, 52%, $26.460, $73.600
+121,Colorado School of Mines,Golden. CO, 1380,30, $35.100, $27.200, 72%, $25.000, $74.100
+122,Siena College,Loudonville. NY, NA,NA, $56.300, $29.800, 92%, $26.900, $52.100
+123,Rockhurst University,Kansas City. MO, 1140,25, $53.900, $24.900, 70%, $21.500, $54.600
+124,Colby College,Waterville. ME, 1420,32, $71.600, $21.700, 46%, $19.170, $57.800
+125,Johns Hopkins University,Baltimore. MD, 1510,34, $73.000, $31.000, 51%, $13.500, $65.500
+126,Haverford College,Haverford. PA, 1460,33, $74.800, $25.200, 49%, $13.000, $56.100
+127,Emory University,Atlanta. GA, 1440,32, $69.900, $28.700, 55%, $19.250, $59.900
+128,CUNY Hunter College,New York. NY, 1210,NA, $23.000, $5.600, 58%, $11.600, $50.900
+129,Illinois State University,Normal. IL, NA,24, $30.200, $20.500, 53%, $21.250, $49.700
+129,Simmons College,Boston. MA, 1220,27, $60.800, $31.700, 93%, $25.000, $52.800
+131,University of Southern California,Los Angeles. CA, 1400,32, $75.400, $35.100, 59%, $22.120, $62.000
+132,Lake Forest College,Lake Forest. IL, NA,NA, $61.300, $27.400, 96%, $27.000, $53.700
+133,St Olaf College,Northfield. MN, 1280,28, $60.900, $29.400, 90%, $27.000, $51.900
+134,Vassar College,Poughkeepsie. NY, 1420,32, $73.500, $25.400, 68%, $16.250, $54.200
+135,Northeastern University,Boston. MA, 1450,33, $71.200, $32.900, 63%, $27.000, $61.200
+136,Florida International University,Miami. FL, 1160,25, $24.700, $13.000, 67%, $17.250, $48.100
+136,Harvey Mudd College,Claremont. CA, 1520,34, $77.700, $40.700, 71%, $23.500, $85.600
+138,Washington State University,Pullman. WA, 1120,23, $28.500, $19.100, 65%, $20.350, $54.600
+139,Fairfield University,Fairfield. CT, NA,NA, $67.200, $40.300, 81%, $27.000, $59.600
+140,Wesleyan University,Middletown. CT, NA,NA, $73.000, $25.900, 43%, $16.880, $59.300
+141,SUNY Cortland,Cortland. NY, 1130,24, $26.000, $19.200, 61%, $21.500, $44.900
+142,Mount Saint Mary's University. Los Angeles,Los Angeles. CA, 1020,19, $62.000, $30.900, 82%, $26.000, $52.800
+143,New Jersey Institute of Technology,Newark. NJ, 1280,27, $38.100, $19.200, 59%, $23.260, $62.800
+144,San Francisco State University,San Francisco. CA, 1050,21, $27.900, $14.500, 59%, $16.710, $55.200
+144,Santa Clara University,Santa Clara. CA, 1360,30, $72.500, $41.500, 68%, $21.000, $66.800
+146,Saint Anselm College,Manchester. NH, 1220,26, $59.400, $33.600, 96%, $27.000, $54.900
+147,Brigham Young University-Provo,Provo. UT, 1310,30, $19.200, $13.900, 74%, $10.800, $57.400
+148,Worcester Polytechnic Institute,Worcester. MA, NA,NA, $67.900, $45.900, 92%, $27.000, $71.700
+149,Saint Mary's College,Notre Dame. IN, 1140,26, $57.700, $28.500, 96%, $27.000, $49.100
+150,California State University-Sacramento,Sacramento. CA, 1040,20, $26.900, $10.500, 72%, $15.250, $53.000
+151,Babson College,Wellesley. MA, 1320,30, $71.500, $31.900, 47%, $26.000, $69.300
+152,Ohio State University,Columbus. OH, 1360,29, $28.200, $19.300, 67%, $21.500, $54.000
+153,Brandeis University,Waltham. MA, 1380,31, $74.100, $34.900, 59%, $27.000, $58.000
+154,Trinity University,San Antonio. TX, 1320,30, $59.400, $30.500, 96%, $26.000, $53.400
+155,Manhattan College,Riverdale. NY, 1150,26, $62.900, $38.300, 85%, $26.000, $62.600
+155,Molloy College,Rockville Centre. NY, 1140,24, $52.600, $28.800, 77%, $27.000, $58.900
+157,Hobart William Smith Colleges,Geneva. NY, 1240,28, $72.900, $45.100, 89%, $27.000, $53.600
+158,Saint Johns University,Collegeville. MN, 1080,25, $58.400, $28.000, 100%, $27.000, $57.400
+159,State University of New York at New Paltz,New Paltz. NY, 1180,26, $25.300, $15.500, 53%, $18.750, $46.600
+160,Michigan Technological University,Houghton. MI, 1250,28, $30.400, $18.300, 88%, $26.930, $64.600
+160,St. Thomas Aquinas College,Sparkill. NY, 1000,20, $49.700, $21.900, 69%, $23.000, $48.400
+162,Denison University,Granville. OH, 1290,30, $67.900, $34.500, 99%, $27.000, $52.400
+163,Trinity College,Hartford. CT, 1340,30, $74.600, $30.500, 51%, $21.500, $57.600
+164,Maine Maritime Academy,Castine. ME, 1090,21, $28.500, $22.400, 69%, $27.000, $66.700
+165,Clarkson University,Potsdam. NY, 1240,27, $69.000, $33.100, 97%, $27.000, $65.100
+166,Franklin & Marshall College,Lancaster. PA, NA,NA, $73.600, $26.100, 55%, $22.000, $54.600
+167,Skidmore College,Saratoga Springs. NY, 1300,29, $72.500, $27.000, 45%, $19.500, $52.700
+167,Gustavus Adolphus College,Saint Peter. MN, NA,NA, $58.300, $31.900, 97%, $27.000, $49.700
+169,St Mary's College of Maryland,St. Mary's City. MD, 1180,25, $31.000, $22.100, 74%, $20.500, $52.300
+170,University of Arizona,Tucson. AZ, NA,NA, $29.500, $16.800, 68%, $19.000, $55.000
+170,Wabash College,Crawfordsville. IN, 1180,26, $57.000, $26.300, 99%, $25.790, $60.200
+172,University of Vermont,Burlington. VT, 1270,28, $34.800, $21.200, 79%, $22.500, $51.600
+173,McDaniel College,Westminster. MD, 1150,25, $58.300, $24.200, 96%, $27.000, $49.500
+174,Connecticut College,New London. CT, NA,NA, $72.500, $29.200, 54%, $23.200, $55.700
+175,Berea College,Berea. KY, 1090,25, $37.000, $1.800, 98%, $5.300, $39.600
+175,Missouri University of Science and Technology,Rolla. MO, 1220,28, $23.000, $15.100, 80%, $24.250, $66.700
+177,Hamilton College,Clinton. NY, 1440,32, $70.700, $23.600, 53%, $17.000, $61.000
+178,Le Moyne College,Syracuse. NY, 1160,25, $52.200, $25.800, 90%, $24.370, $49.000
+179,West Chester University of Pennsylvania,West Chester. PA, 1130,24, $28.000, $20.700, 44%, $23.290, $48.500
+179,Villanova University,Villanova. PA, 1350,32, $71.300, $37.900, 51%, $26.690, $63.600
+181,California State University-East Bay,Hayward. CA, NA,NA, $26.200, $12.200, 64%, $15.090, $55.600
+182,SUNY Maritime College,Throggs Neck. NY, 1180,24, $26.400, $17.400, 53%, $24.000, $73.300
+183,Lawrence University,Appleton. WI, 1340,29, $61.100, $30.100, 97%, $27.000, $48.500
+184,Marquette University,Milwaukee. WI, 1220,27, $57.700, $34.600, 96%, $27.000, $56.400
+185,Bucknell University,Lewisburg. PA, 1340,30, $73.200, $40.400, 53%, $27.000, $64.800
+186,Middlebury College,Middlebury. VT, 1420,32, $72.600, $24.400, 43%, $13.630, $58.400
+187,Westfield State University,Westfield. MA, 1060,23, $25.100, $17.000, 55%, $22.750, $46.000
+188,SUNY College at Brockport,Brockport. NY, 1090,23, $25.200, $16.000, 65%, $19.980, $45.300
+189,Marist College,Poughkeepsie. NY, NA,NA, $57.300, $39.000, 77%, $25.850, $54.000
+190,Salisbury University,Salisbury. MD, NA,NA, $26.200, $19.600, 61%, $20.270, $49.300
+191,University of South Florida,Tampa. FL, 1230,27, $22.400, $12.600, 65%, $18.750, $48.500
+192,Wheaton College - Illinois,Wheaton. IL, 1320,30, $49.800, $32.000, 80%, $22.440, $51.500
+193,The University of Texas Rio Grande Valley,Edinburg. TX, 1040,20, $20.900, $4.400, 74%, $10.050, $44.900
+194,University of Rochester,Rochester. NY, 1400,31, $73.200, $39.600, 80%, $23.280, $58.900
+195,Farmingdale State College,Farmingdale. NY, 1060,21, $25.200, $8.900, 46%, $15.890, $51.200
+195,University of Wisconsin-La Crosse,La Crosse. WI, NA,24, $18.200, $13.900, 46%, $23.000, $48.400
+197,Gettysburg College,Gettysburg. PA, NA,NA, $69.700, $37.000, 82%, $23.000, $55.900
+197,Fairleigh Dickinson University-Metropolitan Campus,Teaneck. NJ, 1100,23, $59.100, $17.900, 45%, $25.000, $49.700
+199,Fitchburg State University,Fitchburg. MA, 1060,21, $25.000, $15.600, 59%, $23.250, $46.600
+200,Concordia University-Saint Paul,Saint Paul. MN, NA,NA, $36.000, $21.000, 66%, $21.200, $48.600
+201,Yeshiva University,New York. NY, 1290,26, $63.200, $34.000, 87%, $20.500, $61.700
+202,University of Evansville,Evansville. IN, 1140,26, $53.100, $22.500, 85%, $26.950, $49.700
+203,Allegheny College,Meadville. PA, 1230,26, $63.800, $27.100, 99%, $29.000, $48.700
+204,Iona College,New Rochelle. NY, 1080,23, $58.300, $28.800, 90%, $26.000, $53.800
+205,Grinnell College,Grinnell. IA, 1410,32, $69.200, $31.500, 88%, $15.600, $51.200
+206,New York University,New York. NY, 1390,31, $75.000, $38.700, 53%, $22.900, $60.800
+206,Smith College,Northampton. MA, NA,NA, $72.700, $28.500, 68%, $19.000, $51.100
+208,Syracuse University,Syracuse. NY, 1260,28, $68.400, $37.700, 70%, $27.000, $56.200
+209,Boston University,Boston. MA, 1390,31, $73.400, $36.000, 45%, $25.630, $58.900
+210,Drake University,Des Moines. IA, 1230,27, $56.400, $30.200, 95%, $26.440, $51.600
+211,Temple University,Philadelphia. PA, NA,NA, $33.900, $24.500, 78%, $25.500, $50.800
+212,Stevens Institute of Technology,Hoboken. NJ, 1400,31, $70.200, $41.100, 92%, $27.000, $73.600
+213,Trinity Christian College,Palos Heights. IL, 1130,23, $44.100, $23.700, 84%, $25.000, $46.500
+213,Illinois Institute of Technology,Chicago. IL, 1320,28, $66.600, $28.100, 98%, $27.000, $62.800
+213,Western Washington University,Bellingham. WA, 1180,25, $24.600, $17.200, 47%, $19.330, $53.000
+216,Providence College,Providence. RI, 1250,28, $67.900, $38.500, 71%, $27.000, $56.900
+217,Rensselaer Polytechnic Institute,Troy. NY, 1410,30, $73.300, $40.200, 87%, $29.000, $69.600
+218,University of San Francisco,San Francisco. CA, 1200,25, $68.900, $37.600, 68%, $25.000, $58.600
+219,University of Portland,Portland. OR, 1230,26, $61.900, $35.600, 97%, $24.900, $57.400
+220,St. Mary's University,San Antonio. TX, 1140,23, $46.500, $19.000, 90%, $27.000, $50.500
+221,Milwaukee School of Engineering,Milwaukee. WI, 1260,28, $54.400, $25.400, 93%, $27.000, $65.000
+222,Duquesne University,Pittsburgh. PA, 1200,27, $54.400, $32.600, 93%, $27.000, $51.800
+223,La Salle University,Philadelphia. PA, NA,NA, $47.500, $28.000, 89%, $27.000, $53.700
+224,SUNY Oneonta,Oneonta. NY, 1120,23, $25.200, $16.700, 56%, $21.500, $45.200
+225,College of Mount Saint Vincent,Bronx. NY, 970,20, $52.200, $18.700, 85%, $27.000, $50.600
+225,Augustana College,Rock Island. IL, NA,NA, $55.800, $25.500, 98%, $27.000, $46.600
+225,University of Utah,Salt Lake City. UT, 1230,26, $24.700, $13.200, 56%, $15.000, $53.400
+228,Lewis University,Romeoville. IL, 1090,24, $47.500, $21.300, 81%, $23.940, $49.100
+229,Fresno Pacific University,Fresno. CA, 1060,20, $45.000, $15.200, 82%, $21.500, $43.900
+230,Stonehill College,Easton. MA, NA,NA, $62.200, $35.800, 94%, $27.000, $54.000
+230,Saint Joseph's University,Philadelphia. PA, 1200,26, $63.600, $37.700, 91%, $23.490, $55.300
+230,Dickinson College,Carlisle. PA, NA,NA, $72.100, $34.700, 72%, $21.000, $54.200
+233,Gonzaga University,Spokane. WA, 1270,28, $59.900, $36.400, 49%, $26.040, $56.300
+234,Mount Holyoke College,South Hadley. MA, 1370,31, $66.700, $31.800, 79%, $21.250, $50.500
+235,George Washington University,Washington. DC, 1360,31, $72.500, $40.200, 65%, $25.000, $59.000
+236,University of Houston,Houston. TX, 1200,25, $26.100, $16.700, 56%, $19.250, $55.000
+237,Rowan University,Glassboro. NJ, 1160,25, $32.400, $20.500, 42%, $19.670, $50.100
+238,Bryant University,Smithfield. RI, NA,NA, $62.600, $37.000, 88%, $27.000, $58.700
+239,Albany College of Pharmacy and Health Sciences,Albany. NY, 1190,26, $50.200, $32.400, 96%, $27.000, $80.200
+240,Truman State University,Kirksville. MO, 1300,27, $22.000, $13.400, 77%, $22.400, $46.500
+241,Bradley University,Peoria. IL, 1190,25, $48.800, $27.600, 94%, $27.000, $54.100
+242,Linfield College-McMinnville CampusMc,Minnville. OR, 1120,23, $59.200, $30.600, 97%, $25.000, $50.900
+243,California State University-San Marcos,San Marcos. CA, 1040,21, $26.400, $11.200, 66%, $17.500, $50.400
+244,Pepperdine University,Malibu. CA, 1300,29, $74.000, $38.800, 76%, $25.840, $56.400
+244,University of Central Florida,Orlando. FL, 1240,27, $23.200, $16.400, 62%, $18.130, $48.200
+246,Saint Martin's University,Lacey. WA, 1090,21, $52.900, $24.200, 78%, $23.400, $52.100
+247,Arizona State University-Tempe,Tempe. AZ, 1240,26, $28.800, $13.800, 75%, $20.000, $53.200
+248,Kenyon College,Gambier. OH, 1360,31, $72.300, $33.800, 56%, $18.500, $52.700
+249,Saint Louis University,Saint Louis. MO, 1280,28, $59.800, $33.900, 56%, $25.750, $53.100
+250,The College of Saint Scholastica,Duluth. MN, 1160,23, $51.300, $25.600, 80%, $20.200, $51.000
+251,Occidental College,Los Angeles. CA, 1360,30, $74.900, $36.000, 68%, $23.220, $54.100
+252,University of Northern Iowa,Cedar Falls. IA, 1220,24, $22.300, $17.000, 57%, $20.350, $46.300
+253,North Dakota State University,Fargo. ND, 1190,24, $22.400, $15.800, 59%, $22.570, $53.200
+254,Lebanon Valley College,Annville. PA, 1160,24, $59.900, $29.300, 94%, $27.000, $47.800
+255,University of the Sciences,Philadelphia. PA, 1210,27, $62.800, $35.700, 98%, $27.000, $55.900
+256,SUNY College at Old Westbury,Old Westbury. NY, 1030,21, $24.400, $11.500, 60%, $17.000, $48.100
+257,SUNY College at Geneseo,Geneseo. NY, 1210,27, $26.200, $18.100, 56%, $21.680, $49.800
+257,Saint Peter's University,Jersey City. NJ, 1020,20, $56.400, $14.300, 89%, $23.800, $51.800
+259,Clark University,Worcester. MA, NA,NA, $57.500, $30.800, 86%, $27.000, $50.200
+259,University of Redlands,Redlands. CA, 1160,26, $70.000, $35.100, 82%, $27.000, $53.300
+261,Ursinus College,Collegeville. PA, 1210,27, $69.200, $34.000, 99%, $27.000, $52.100
+262,College of Our Lady of the Elms,Chicopee. MA, 1030,21, $53.100, $23.000, 83%, $25.000, $48.900
+262,University of Wisconsin-Eau Claire,Eau Claire. WI, NA,24, $21.000, $15.400, 47%, $22.800, $51.100
+264,John Carroll University,University Heights. OH, 1070,25, $58.300, $28.300, 94%, $27.000, $49.800
+265,University of Rhode Island,Kingston. RI, 1140,25, $30.800, $20.000, 71%, $23.000, $53.000
+266,University of Mary Washington,Fredericksburg. VA, 1170,25, $28.700, $21.500, 62%, $20.500, $52.600
+267,Goshen College,Goshen. IN, 1110,24, $48.600, $20.800, 93%, $20.200, $44.100
+267,Carleton College,Northfield. MN, 1450,33, $71.900, $30.000, 62%, $20.000, $56.100
+269,Centenary University,Hackettstown. NJ, 1000,22, $50.500, $20.800, 79%, $25.000, $44.300
+270,Appalachian State University,Boone. NC, 1190,25, $19.900, $11.200, 47%, $20.240, $45.500
+271,The University of Texas at Dallas,Richardson. TX, 1330,29, $28.600, $10.700, 65%, $18.000, $55.500
+271,University of Minnesota-Crookston,Crookston. MN, 1050,22, $24.900, $14.900, 41%, $20.470, $50.100
+273,Holy Family University,Philadelphia. PA, 1010,NA, $48.900, $16.800, 73%, $26.500, $50.200
+274,Hope College,Holland. MI, 1210,27, $47.400, $29.700, 87%, $27.000, $47.600
+274,University of St. Thomas - Minnesota,Saint Paul. MN, 1210,27, $57.100, $33.600, 93%, $25.000, $55.600
+276,University of Wisconsin-Platteville,Platteville. WI, NA,24, $19.800, $15.300, 47%, $24.250, $56.000
+277,Saint Mary's College of California,Moraga. CA, 1150,25, $68.400, $35.700, 90%, $24.690, $57.700
+278,Colorado State University-Fort Collins,Fort Collins. CO, 1200,25, $27.100, $18.400, 52%, $20.500, $52.000
+278,University of La Verne,La Verne. CA, 1110,22, $62.500, $29.600, 74%, $25.000, $48.300
+280,SUNY College at Plattsburgh,Plattsburgh. NY, 1120,23, $25.700, $14.200, 73%, $21.500, $44.900
+281,Seattle University,Seattle. WA, 1230,27, $62.300, $38.000, 85%, $22.640, $59.400
+282,Rhodes College,Memphis. TN, 1320,30, $64.300, $31.100, 92%, $25.030, $49.400
+283,Sonoma State University,Rohnert Park. CA, 1080,22, $27.200, $17.900, 55%, $17.500, $52.100
+284,Muhlenberg College,Allentown. PA, 1240,28, $68.200, $39.500, 82%, $26.990, $51.700
+284,Messiah College,Mechanicsburg. PA, 1210,26, $50.100, $29.700, 95%, $25.000, $50.100
+284,Kalamazoo College,Kalamazoo. MI, 1280,28, $61.900, $29.900, 98%, $27.000, $49.900
+287,Madonna University,Livonia. MI, 950,22, $35.700, $17.600, 67%, $25.000, $44.300
+288,Houghton College,Houghton. NY, 1190,26, $46.400, $20.700, 98%, $23.650, $42.600
+289,Stockton University,Galloway. NJ, 1110,22, $31.600, $15.300, 64%, $20.880, $46.100
+290,St Catherine University,Saint Paul. MN, 1180,23, $53.000, $21.900, 82%, $26.940, $48.700
+291,Pennsylvania State University,University Park. PA, 1250,28, $38.000, $27.100, 63%, $26.120, $57.300
+292,Adelphi University,Garden City. NY, 1150,25, $58.900, $29.800, 85%, $25.000, $53.400
+293,Oklahoma State University,Stillwater. OK, 1170,25, $24.700, $15.500, 73%, $20.750, $51.700
+294,University of Pittsburgh-Pittsburgh Campus,Pittsburgh. PA, 1330,30, $34.700, $24.400, 54%, $26.900, $54.600
+295,SUNY College at Oswego,Oswego. NY, 1150,25, $25.200, $17.400, 77%, $21.500, $44.900
+296,University of Scranton,Scranton. PA, 1180,26, $63.800, $38.800, 86%, $27.000, $54.400
+297,Seton Hall University,South Orange. NJ, 1210,26, $59.600, $30.600, 88%, $25.000, $56.000
+298,Winona State University,Winona. MN, 1190,23, $22.700, $17.800, 54%, $23.210, $48.900
+298,University of St. Francis,Joliet. IL, 1140,23, $46.600, $20.000, 90%, $25.000, $48.800
+300,Ohio Northern University,Ada. OH, 1220,25, $48.200, $25.500, 90%, $27.000, $53.500
+301,Dominican University of California,San Rafael. CA, 1130,23, $67.300, $37.000, 92%, $27.000, $55.700
+302,Texas Tech University,Lubbock. TX, 1160,25, $24.700, $16.900, 54%, $22.100, $55.700
+303,Loyola University Maryland,Baltimore. MD, NA,NA, $67.400, $39.300, 80%, $27.000, $57.500
+304,Oregon State University,Corvallis. OR, 1190,25, $27.400, $20.500, 52%, $23.390, $54.800
+304,Wittenberg University,Springfield. OH, NA,NA, $54.400, $26.000, 95%, $27.000, $49.800
+306,William Paterson University of New Jersey,Wayne. NJ, 1030,21, $30.000, $15.800, 60%, $23.500, $49.300
+307,Framingham State University,Framingham. MA, 1040,22, $27.300, $20.600, 54%, $24.970, $48.400
+308,Scripps College,Claremont. CA, 1380,31, $74.200, $39.300, 58%, $13.750, $53.700
+308,Kansas State University,Manhattan. KS, NA,NA, $25.400, $18.600, 61%, $22.500, $51.600
+310,Franciscan University of Steubenville,Steubenville. OH, 1190,26, $39.500, $27.100, 95%, $22.620, $46.500
+311,Augsburg University,Minneapolis. MN, 1100,22, $53.500, $25.600, 91%, $27.000, $49.300
+311,The Sage Colleges,Troy. NY, NA,NA, $47.400, $22.000, 93%, $23.250, $43.700
+313,Martin Luther College,New Ulm. MN, 1190,25, $26.700, $19.800, 77%, $21.500, $34.600
+314,Cedarville University,Cedarville. OH, 1240,26, $40.900, $25.100, 87%, $21.460, $51.700
+315,John Brown University,Siloam Springs. AR, 1200,27, $40.600, $23.800, 74%, $20.500, $46.100
+316,Louisiana State University and Agricultural & Mechanical College,Baton Rouge. LA, 1180,26, $31.000, $20.500, 73%, $21.000, $53.500
+317,Monmouth University,West Long Branch. NJ, 1080,23, $57.300, $33.400, 95%, $26.600, $50.800
+318,Taylor University,Upland. IN, 1170,26, $47.300, $27.500, 84%, $23.500, $46.800
+319,Elon University,Elon. NC, 1240,27, $51.900, $36.000, 54%, $21.500, $52.300
+320,Case Western Reserve University,Cleveland. OH, 1430,32, $68.300, $37.300, 81%, $24.500, $65.100
+321,Assumption College,Worcester. MA, NA,NA, $57.000, $31.000, 92%, $27.000, $52.100
+322,Knox College,Galesburg. IL, NA,NA, $59.100, $26.800, 97%, $27.000, $47.900
+322,Loyola Marymount University,Los Angeles. CA, 1270,29, $67.600, $45.300, 78%, $22.000, $56.000
+324,Merrimack College,North Andover. MA, NA,NA, $60.400, $35.400, 92%, $27.000, $54.700
+325,Wheaton College - Massachusetts,Norton. MA, 1250,28, $68.700, $34.000, 95%, $26.600, $51.300
+326,William Carey University,Hattiesburg. MS, 1080,25, $29.200, $17.400, 64%, $20.830, $41.800
+326,Loras College,Dubuque. IA, 1100,23, $45.800, $20.900, 98%, $27.000, $46.400
+328,Concordia College at Moorhead,Moorhead. MN, 1180,25, $51.700, $25.900, 96%, $27.000, $46.100
+329,Presbyterian College,Clinton. SC, 1140,24, $54.200, $21.900, 89%, $26.000, $46.800
+330,Hamline University,Saint Paul. MN, 1140,23, $54.500, $23.600, 95%, $24.400, $46.800
+331,University of Wyoming,Laramie. WY, 1170,25, $20.700, $14.300, 72%, $18.080, $51.700
+332,Saint Vincent College,Latrobe. PA, 1120,23, $51.100, $22.500, 90%, $27.000, $48.500
+333,University of Wisconsin-Stevens Point,Stevens Point. WI, NA,23, $19.800, $13.800, 54%, $24.440, $44.400
+334,Illinois Wesleyan University,Bloomington. IL, 1300,27, $61.400, $32.200, 99%, $27.000, $51.100
+335,University of North Dakota,Grand Forks. ND, 1160,24, $22.400, $15.500, 52%, $24.490, $52.600
+336,Rose-Hulman Institute of Technology,Terre Haute. IN, 1360,30, $67.900, $44.300, 98%, $27.000, $73.400
+337,Wagner College,Staten Island. NY, NA,NA, $65.000, $32.200, 98%, $25.000, $56.400
+338,Wofford College,Spartanburg. SC, 1220,30, $60.300, $28.900, 91%, $26.000, $49.300
+339,Central Washington University,Ellensburg. WA, 1010,21, $23.600, $15.100, 63%, $20.000, $51.300
+340,Niagara University,Niagara University. NY, 1110,24, $49.500, $20.000, 92%, $25.750, $42.700
+341,Miami University-Oxford,Oxford. OH, 1290,29, $33.200, $21.700, 61%, $23.950, $55.400
+342,Kean University,Union. NJ, 980,19, $30.600, $18.000, 51%, $24.000, $47.100
+343,SUNY at Fredonia,Fredonia. NY, 1090,24, $24.600, $16.800, 72%, $25.000, $42.500
+344,University of Massachusetts-Lowell,Lowell. MA, 1220,27, $31.200, $19.600, 56%, $24.600, $57.400
+345,Colorado College,Colorado Springs. CO, NA,NA, $71.700, $30.200, 55%, $20.500, $51.100
+346,Canisius College,Buffalo. NY, 1150,25, $54.500, $22.000, 94%, $25.000, $46.500
+347,University of Idaho,Moscow. ID, 1120,23, $22.200, $16.000, 73%, $24.500, $51.300
+348,University of Minnesota-Duluth,Duluth. MN, 1170,24, $25.500, $17.500, 60%, $24.250, $51.600
+349,Waynesburg University,Waynesburg. PA, 1070,21, $37.600, $20.700, 94%, $27.000, $44.600
+350,University of Wisconsin-Stout,Menomonie. WI, NA,22, $20.600, $16.000, 48%, $25.000, $49.700
+351,Saint Michael's College,Colchester. VT, NA,NA, $60.100, $34.200, 98%, $27.380, $51.200
+352,Touro College,New York. NY, NA,NA, $36.700, $23.800, 71%, $14.500, $57.700
+352,University of Colorado Boulder,Boulder. CO, 1250,28, $31.500, $21.700, 47%, $19.500, $55.600
+354,University of San Diego,San Diego. CA, 1270,28, $68.300, $41.200, 70%, $24.000, $56.600
+354,Regis University,Denver. CO, 1170,23, $53.500, $27.300, 59%, $22.920, $55.700
+356,MCPHS University,Boston. MA, 1160,25, $55.700, $41.300, 84%, $27.000, $63.700
+357,Southern Methodist University,Dallas. TX, 1360,30, $75.600, $38.900, 68%, $20.060, $57.200
+358,Gannon University,Erie. PA, 1110,23, $48.600, $23.300, 81%, $27.000, $49.900
+359,Auburn University,Auburn. AL, 1220,27, $32.700, $24.100, 53%, $21.500, $52.800
+360,Neumann University,Aston. PA, 990,18, $48.100, $24.800, 79%, $27.000, $49.900
+361,University of Oregon,Eugene. OR, 1180,25, $28.100, $16.100, 57%, $20.500, $50.300
+362,Elmhurst College,Elmhurst. IL, 1100,23, $52.200, $24.200, 98%, $21.500, $49.100
+363,University of North Carolina School of the Arts,Winston-Salem. NC, 1190,25, $22.900, $14.500, 69%, $27.000, $45.400
+364,Gwynedd Mercy University,Gwynedd Valley. PA, 1020,20, $50.400, $25.500, 73%, $25.000, $51.500
+365,Louisiana Tech University,Ruston. LA, 990,25, $21.300, $11.400, 89%, $19.680, $52.100
+366,University of Maryland-Baltimore County,Baltimore. MD, 1250,27, $28.800, $17.100, 49%, $20.910, $56.800
+367,Ithaca College,Ithaca. NY, NA,NA, $64.100, $37.100, 91%, $25.450, $50.600
+368,Bridgewater State University,Bridgewater. MA, 1070,21, $27.400, $17.800, 54%, $24.000, $46.900
+369,Rochester Institute of Technology,Rochester. NY, 1290,29, $57.100, $33.500, 86%, $28.000, $60.400
+370,Bryn Mawr College,Bryn Mawr. PA, 1410,31, $71.500, $30.400, 71%, $25.000, $52.900
+371,Macalester College,Saint Paul. MN, 1390,31, $69.200, $32.700, 80%, $21.500, $51.300
+372,Texas Christian University,Fort Worth. TX, 1230,28, $65.800, $37.700, 68%, $20.470, $54.700
+373,University of Wisconsin-Whitewater,Whitewater. WI, NA,22, $18.600, $13.300, 43%, $24.590, $48.000
+374,Salem State University,Salem. MA, 1070,22, $27.400, $18.100, 54%, $24.250, $47.000
+374,Sam Houston State University,Huntsville. TX, 1070,21, $22.800, $12.500, 69%, $21.250, $48.300
+376,Fordham University,Bronx. NY, 1320,29, $75.500, $41.100, 81%, $26.000, $56.400
+377,Clarke University,Dubuque. IA, 1060,23, $47.900, $28.700, 95%, $26.170, $44.600
+378,University of Miami,Coral Gables. FL, 1330,30, $69.200, $45.100, 67%, $19.000, $55.100
+379,Longwood University,Farmville. VA, 1050,21, $28.100, $19.500, 49%, $25.000, $46.000
+380,East Carolina University,Greenville. NC, 1110,22, $23.000, $14.200, 52%, $24.440, $47.200
+381,Cabrini University,Radnor. PA, 1080,21, $48.800, $26.400, 86%, $26.000, $47.600
+382,University of Dayton,Dayton. OH, 1210,27, $60.200, $37.400, 89%, $26.100, $56.100
+382,Drexel University,Philadelphia. PA, 1260,27, $71.900, $43.700, 80%, $26.000, $60.700
+384,University of Nebraska at Kearney,Kearney. NE, 1090,22, $23.600, $17.000, 70%, $20.980, $42.900
+385,Radford University,Radford. VA, NA,NA, $24.300, $14.500, 50%, $23.250, $47.800
+386,Eastern Illinois University,Charleston. IL, NA,21, $24.700, $15.100, 75%, $23.250, $45.000
+387,Illinois College,Jacksonville. IL, NA,NA, $44.700, $18.300, 99%, $27.000, $44.700
+388,Sewanee-The University of the South,Sewanee. TN, NA,NA, $63.700, $36.300, 84%, $19.120, $51.100
+389,Endicott College,Beverly. MA, NA,NA, $52.600, $37.500, 79%, $27.000, $49.900
+390,Tulane University of Louisiana,New Orleans. LA, 1410,32, $72.900, $36.200, 68%, $27.000, $54.600
+391,University of Missouri-St Louis,Saint Louis. MO, 1150,25, $25.800, $9.800, 43%, $20.460, $47.600
+392,Valparaiso University,Valparaiso. IN, 1170,26, $55.300, $24.700, 95%, $27.000, $52.600
+393,University of Nebraska - Lincoln,Lincoln. NE, 1240,26, $26.200, $17.900, 64%, $21.790, $50.600
+394,Loyola University Chicago,Chicago. IL, 1220,27, $62.600, $36.900, 87%, $25.000, $51.900
+395,Dominican University,River Forest. IL, 1110,23, $47.000, $19.500, 88%, $25.000, $47.900
+396,Creighton University,Omaha. NE, 1180,28, $55.800, $33.600, 92%, $25.300, $52.400
+397,Misericordia University,Dallas. PA, 1120,24, $49.600, $27.700, 85%, $27.000, $45.500
+397,Whittier College,Whittier. CA, 1120,24, $64.100, $28.600, 94%, $25.000, $49.300
+399,Centre College,Danville. KY, 1290,29, $56.300, $28.000, 98%, $27.000, $48.900
+400,Keene State College,Keene. NH, 1040,21, $28.500, $20.800, 75%, $26.000, $48.100
+400,St Thomas University,Miami Gardens. FL, 970,20, $49.300, $26.500, 29%, $21.580, $47.500
+402,Baker University,Baldwin City. KS, 1030,23, $45.400, $23.900, 63%, $24.500, $47.400
+403,Grace College and Theological Seminary,Winona Lake. IN, 1110,24, $35.500, $21.700, 76%, $22.250, $43.700
+404,Florida Atlantic University,Boca Raton. FL, 1140,24, $24.400, $10.800, 58%, $16.800, $48.300
+405,Westminster College - Pennsylvania,New Wilmington. PA, 1110,24, $51.800, $23.500, 98%, $27.000, $45.800
+406,The University of Tennessee-Knoxville,Knoxville. TN, 1230,27, $32.300, $22.400, 74%, $20.500, $50.200
+407,California Lutheran University,Thousand Oaks. CA, 1150,24, $62.500, $30.100, 87%, $21.880, $50.600
+408,University of the Pacific,Stockton. CA, 1200,26, $67.700, $34.900, 88%, $24.250, $57.700
+409,Graceland University-Lamoni,Lamoni. IA, 990,21, $43.000, $19.500, 80%, $22.830, $47.100
+410,South Dakota State University,Brookings. SD, 1120,23, $23.800, $19.400, 54%, $25.000, $49.800
+411,Eastern Washington University,Cheney. WA, 980,21, $23.100, $12.200, 61%, $20.500, $48.700
+412,Susquehanna University,Selinsgrove. PA, NA,NA, $62.400, $28.700, 100%, $27.000, $48.900
+413,Massachusetts College of Art and Design,Boston. MA, NA,NA, $31.000, $23.500, 72%, $25.000, $48.500
+414,Washington College,Chestertown. MD, NA,NA, $63.700, $33.800, 92%, $24.250, $52.700
+415,Depauw University,Greencastle. IN, 1220,27, $65.400, $31.300, 99%, $26.380, $54.900
+416,Coe College,Cedar Rapids. IA, 1200,25, $57.700, $23.200, 94%, $28.500, $46.000
+417,Mount Mercy University,Cedar Rapids. IA, NA,22, $46.700, $23.900, 90%, $22.000, $48.000
+418,College of Staten Island CUNY,Staten Island. NY, NA,NA, $33.100, $6.700, 57%, $14.000, $51.100
+419,Saint John Fisher College,Rochester. NY, 1150,24, $49.900, $29.500, 97%, $23.500, $45.800
+420,Bloomsburg University of Pennsylvania,Bloomsburg. PA, 1060,22, $25.300, $17.600, 54%, $26.000, $48.000
+420,University of Wisconsin-Oshkosh,Oshkosh. WI, NA,22, $19.900, $14.000, 37%, $23.000, $46.900
+422,Salve Regina University,Newport. RI, NA,NA, $59.300, $36.300, 90%, $27.000, $51.800
+423,Saint Norbert College,De Pere. WI, 1170,25, $50.300, $27.700, 97%, $27.000, $48.300
+424,Sacred Heart University,Fairfield. CT, NA,NA, $61.000, $42.900, 89%, $25.380, $53.700
+425,Southwestern University,Georgetown. TX, 1220,26, $56.700, $28.800, 97%, $26.980, $51.600
+426,University of Detroit Mercy,Detroit. MI, 1140,25, $59.900, $22.300, 91%, $23.250, $51.900
+427,St John's University-New York,Queens. NY, 1160,26, $62.500, $27.700, 69%, $25.500, $53.200
+428,Worcester State University,Worcester. MA, NA,NA, $26.900, $16.300, 58%, $19.500, $48.400
+429,Trine University,Angola. IN, 1070,25, $51.200, $24.700, 47%, $25.000, $54.600
+430,Central Connecticut State University,New Britain. CT, 1070,22, $26.300, $16.900, 52%, $22.000, $52.200
+431,University of St. Thomas - Texas,Houston. TX, 1150,24, $48.600, $20.500, 77%, $22.500, $49.500
+432,University of Oklahoma,Norman. OK, 1270,26, $29.600, $21.400, 68%, $20.000, $53.500
+432,Wentworth Institute of Technology,Boston. MA, 1180,25, $56.500, $40.200, 87%, $27.000, $61.300
+434,Slippery Rock University of Pennsylvania,Slippery Rock. PA, 1080,22, $25.500, $18.700, 60%, $25.000, $44.800
+435,Spelman College,Atlanta. GA, 1140,24, $53.900, $38.600, 79%, $27.000, $49.700
+436,Furman University,Greenville. SC, 1290,29, $66.500, $35.200, 95%, $26.000, $49.600
+437,University of Kansas,Lawrence. KS, NA,26, $26.400, $19.600, 60%, $20.500, $51.500
+438,Elizabethtown College,Elizabethtown. PA, 1180,25, $61.100, $30.300, 98%, $27.000, $48.600
+439,Mills College,Oakland. CA, NA,NA, $66.600, $27.800, 95%, $24.150, $50.500
+440,Dordt College,Sioux Center. IA, 1190,25, $45.700, $27.400, 100%, $23.250, $50.200
+441,Beloit College,Beloit. WI, NA,NA, $62.100, $28.800, 96%, $27.000, $46.500
+442,Winston-Salem State University,Winston-Salem. NC, 960,18, $20.700, $12.000, 78%, $25.000, $46.200
+443,Luther College,Decorah. IA, 1170,26, $56.400, $27.800, 98%, $27.000, $47.300
+444,Saint Xavier University,Chicago. IL, 1090,21, $50.000, $15.900, 93%, $24.250, $48.200
+445,Mississippi State University,Mississippi State. MS, NA,25, $25.500, $17.100, 80%, $23.000, $50.000
+446,Quinnipiac University,Hamden. CT, 1170,25, $66.600, $41.300, 86%, $26.000, $54.600
+447,University of Maine,Orono. ME, 1150,25, $25.300, $18.700, 76%, $26.000, $50.800
+448,Jefferson (Philadelphia University + Thomas Jefferson University),Philadelphia. PA, 1120,24, $60.500, $30.400, 86%, $27.000, $47.800
+449,Augustana University,Sioux Falls. SD, 1180,26, $47.500, $20.200, 95%, $26.860, $46.600
+450,Point Loma Nazarene University,San Diego. CA, 1200,26, $52.100, $33.500, 82%, $22.880, $51.000
+451,University of South Carolina-Columbia,Columbia. SC, 1250,28, $28.300, $21.600, 72%, $23.000, $49.000
+452,Seattle Pacific University,Seattle. WA, 1170,24, $59.000, $33.200, 95%, $26.160, $51.500
+453,Westminster College - Utah,Salt Lake City. UT, 1160,25, $49.900, $25.200, 90%, $25.000, $50.700
+454,Immaculata University,Immaculata. PA, 1060,20, $48.000, $33.500, 68%, $27.000, $49.800
+454,Westmont College,Santa Barbara. CA, 1260,27, $63.600, $34.900, 94%, $23.250, $52.400
+456,American University,Washington. DC, 1270,28, $67.100, $34.900, 55%, $23.250, $53.700
+457,Saint Francis University,Loretto. PA, 1130,24, $54.300, $29.300, 70%, $27.000, $45.600
+458,The College of Saint Rose,Albany. NY, NA,NA, $49.400, $23.900, 95%, $23.250, $43.100
+458,University of Wisconsin-River Falls,River Falls. WI, NA,23, $20.800, $15.000, 52%, $21.680, $46.400
+460,Ball State University,Muncie. IN, 1160,22, $25.400, $14.400, 66%, $24.510, $44.500
+461,University of Hawaii at Manoa,Honolulu. HI, 1150,24, $30.800, $16.500, 60%, $19.000, $50.100
+462,University of South Dakota,Vermillion. SD, 1120,23, $23.300, $17.800, 55%, $25.000, $46.900
+463,Concordia University-Nebraska,Seward. NE, 1010,24, $44.400, $21.600, 66%, $24.780, $40.500
+464,Moravian College,Bethlehem. PA, 1110,24, $60.400, $30.100, 94%, $27.000, $51.100
+465,University of North Georgia,Dahlonega. GA, 1020,23, $20.600, $10.800, 63%, $17.500, $45.700
+466,University of South Carolina-Upstate,Spartanburg. SC, 1010,20, $26.000, $15.700, 67%, $21.600, $45.300
+467,University of Minnesota-Morris,Morris. MN, 1270,25, $25.000, $12.200, 89%, $19.300, $44.500
+468,MidAmerica Nazarene University,Olathe. KS, 1060,21, $43.900, $21.100, 73%, $18.750, $47.400
+469,Notre Dame de Namur University,Belmont. CA, 1010,19, $56.800, $30.100, 80%, $25.000, $54.800
+469,University of Missouri - Columbia,Columbia. MO, 1240,26, $27.800, $19.000, 59%, $22.000, $50.800
+471,Milligan College,Milligan College. TN, 1110,25, $44.300, $21.900, 91%, $25.130, $40.200
+472,Bethel College-Indiana,Mishawaka. IN, 1060,22, $42.500, $20.600, 85%, $26.000, $41.900
+473,SUNY at Purchase College,Purchase. NY, 1110,23, $27.500, $19.400, 60%, $21.880, $48.100
+474,Rider University,Lawrenceville. NJ, 1090,23, $62.400, $32.100, 89%, $25.830, $50.200
+474,Ripon College,Ripon. WI, 1150,23, $54.700, $21.500, 99%, $27.000, $44.500
+476,Bard College,Annandale-On-Hudson. NY, NA,NA, $73.700, $31.400, 67%, $25.140, $51.000
+477,Ohio Wesleyan University,Delaware. OH, NA,NA, $63.000, $29.900, 98%, $27.000, $48.800
+478,Vanguard University of Southern California,Costa Mesa. CA, 1030,21, $48.900, $23.100, 90%, $25.000, $47.200
+479,Washington & Jefferson College,Washington. PA, NA,NA, $62.800, $30.600, 99%, $27.000, $48.300
+479,Biola University,La Mirada. CA, 1180,25, $56.900, $35.400, 99%, $24.190, $48.700
+481,Calvin College,Grand Rapids. MI, 1220,27, $48.900, $28.100, 94%, $26.890, $49.000
+481,Aurora University,Aurora. IL, 1040,21, $38.700, $19.100, 89%, $22.000, $45.600
+483,SUNY College of Technology at Alfred,Alfred. NY, 1040,22, $26.000, $16.300, 78%, $15.000, $50.400
+484,Lycoming College,Williamsport. PA, 1090,23, $56.300, $21.400, 99%, $27.000, $46.200
+484,Central College,Pella. IA, 1090,24, $52.800, $24.400, 94%, $27.000, $48.200
+486,Christopher Newport University,Newport News. VA, NA,NA, $31.000, $24.300, 53%, $25.000, $49.600
+486,University of North Carolina Wilmington,Wilmington. NC, 1250,25, $25.700, $18.000, 50%, $20.500, $45.300
+488,The Evergreen State College,Olympia. WA, 1080,23, $22.300, $13.200, 65%, $17.120, $46.200
+489,King's College,Wilkes-Barre. PA, NA,NA, $54.300, $28.400, 87%, $27.000, $46.000
+490,SUNY Polytechnic Institute,Utica. NY, 1150,24, $24.900, $15.400, 70%, $15.090, $50.500
+491,Pacific University,Forest Grove. OR, 1170,25, $60.000, $31.500, 92%, $27.000, $48.600
+492,DeSales University,Center Valley. PA, 1120,25, $54.700, $29.900, 80%, $25.330, $48.800
+493,West Virginia University,Morgantown. WV, 1120,24, $23.500, $12.300, 67%, $23.690, $52.900
+494,Fisher College,Boston. MA, NA,NA, $53.800, $26.900, 88%, $20.000, $43.800
+495,Texas State University,San Marcos. TX, 1110,23, $23.600, $14.500, 51%, $20.780, $48.600
+496,Carroll College,Helena. MT, 1180,25, $50.700, $28.400, 97%, $26.580, $46.100
+496,Buena Vista University,Storm Lake. IA, 1070,22, $47.600, $21.400, 85%, $24.750, $41.200
+498,University of North Florida,Jacksonville. FL, 1190,24, $22.200, $14.400, 54%, $15.950, $47.500
+498,Union University,Jackson. TN, 1200,26, $54.100, $26.900, 78%, $23.590, $46.200
+500,Old Dominion University,Norfolk. VA, 1090,22, $26.700, $16.200, 57%, $23.750, $48.900
+501,University of Arkansas,Fayetteville. AR, 1200,26, $26.000, $17.000, 56%, $21.500, $51.400
+502,Grand Valley State University,Allendale. MI, 1140,24, $25.300, $17.300, 64%, $24.840, $46.200
+503,Saint Edward's University,Austin. TX, 1170,25, $61.300, $27.400, 84%, $25.000, $47.500
+504,University of Illinois at Springfield,Springfield. IL, 1150,24, $26.200, $12.900, 64%, $18.490, $45.900
+505,Whitworth University,Spokane. WA, 1200,26, $60.400, $31.300, 91%, $26.000, $48.500
+506,Simpson College,Indianola. IA, 1150,24, $52.400, $24.000, 94%, $27.000, $48.300
+507,Austin College,Sherman. TX, 1260,26, $56.200, $23.400, 99%, $26.000, $50.600
+508,Lakeland University,Plymouth. WI, 1180,19, $43.000, $21.900, 53%, $24.320, $46.600
+509,University of North Carolina at Greensboro,Greensboro. NC, 1110,23, $21.600, $11.200, 61%, $22.550, $43.300
+510,University of North Carolina at Charlotte,Charlotte. NC, 1190,24, $24.700, $15.800, 51%, $22.500, $51.500
+511,Gallaudet University,Washington. DC, 960,17, $38.800, $16.300, 88%, $15.000, $40.600
+512,Felician University,Lodi. NJ, 990,20, $52.900, $20.500, 85%, $25.000, $52.100
+513,Pacific Lutheran University,Tacoma. WA, 1160,24, $57.200, $26.200, 96%, $25.850, $52.300
+514,George Fox University,Newberg. OR, 1160,24, $51.100, $31.000, 88%, $23.000, $51.100
+515,Baylor University,Waco. TX, 1280,29, $62.900, $40.300, 91%, $24.000, $53.900
+516,Plymouth State University,Plymouth. NH, NA,NA, $29.600, $23.500, 82%, $26.980, $46.100
+517,University of Maine at Farmington,Farmington. ME, NA,NA, $23.500, $14.500, 85%, $26.720, $41.200
+518,Cazenovia College,Cazenovia. NY, NA,NA, $52.400, $18.800, 88%, $26.500, $38.200
+519,Daemen College,Amherst. NY, NA,NA, $45.100, $18.300, 93%, $21.500, $44.700
+520,Harding University,Searcy. AR, 1170,25, $31.300, $20.600, 86%, $27.000, $48.200
+520,University of Nevada-Reno,Reno. NV, 1170,24, $25.300, $17.300, 62%, $18.280, $51.700
+522,Pitzer College,Claremont. CA, NA,NA, $73.600, $28.800, 43%, $14.040, $51.000
+523,Willamette University,Salem. OR, NA,NA, $65.000, $35.300, 92%, $26.370, $49.900
+524,University of Mississippi,University. MS, 1180,26, $25.900, $15.200, 70%, $19.500, $47.800
+525,Caldwell University,Caldwell. NJ, 1040,20, $52.400, $19.100, 93%, $26.400, $45.200
+526,Butler University,Indianapolis. IN, 1240,28, $59.300, $40.600, 91%, $27.000, $50.000
+527,North Central College,Naperville. IL, 1190,25, $53.500, $26.700, 95%, $25.000, $49.200
+528,University of North Texas,Denton. TX, 1160,24, $25.000, $12.900, 46%, $20.000, $48.800
+529,Thomas College,Waterville. ME, NA,NA, $41.500, $23.100, 68%, $27.000, $46.800
+530,Carroll University,Waukesha. WI, 1090,24, $46.100, $25.100, 94%, $27.000, $44.500
+531,Hood College,Frederick. MD, NA,NA, $57.300, $26.000, 94%, $27.000, $46.500
+532,Covenant College,Lookout Mountain. GA, 1240,27, $48.000, $24.900, 96%, $22.200, $43.700
+533,Chapman University,Orange. CA, 1280,28, $72.600, $42.800, 78%, $21.000, $51.900
+534,Montana State University,Bozeman. MT, 1200,25, $22.100, $16.500, 45%, $23.510, $52.400
+535,Carlow University,Pittsburgh. PA, 970,22, $45.100, $19.000, 85%, $27.000, $42.700
+535,University of Wisconsin-Green Bay,Green Bay. WI, NA,23, $20.200, $13.300, 44%, $21.240, $43.400
+537,University of North Carolina at Asheville,Asheville. NC, 1170,25, $20.800, $13.100, 56%, $20.120, $43.100
+538,Maryville University of Saint Louis,Saint Louis. MO, 1120,24, $48.100, $33.000, 82%, $24.540, $46.500
+539,Oberlin College,Oberlin. OH, 1370,31, $74.500, $42.500, 85%, $27.000, $51.400
+539,Wayne State College,Wayne. NE, NA,NA, $19.200, $13.500, 73%, $19.920, $40.000
+541,University of Denver,Denver. CO, 1260,28, $68.300, $37.500, 81%, $23.800, $54.000
+542,Eastern Connecticut State University,Willimantic. CT, NA,NA, $28.200, $18.900, 61%, $23.500, $48.300
+543,University of New England,Biddeford. ME, 1120,24, $56.700, $35.400, 54%, $27.000, $49.900
+544,Sarah Lawrence College,Bronxville. NY, 1330,29, $73.400, $42.000, 77%, $14.000, $49.700
+545,Whitman College,Walla Walla. WA, 1260,30, $67.400, $40.700, 77%, $19.000, $52.200
+546,University of Northwestern-St Paul,Saint Paul. MN, 1100,24, $45.300, $26.200, 60%, $21.590, $44.300
+547,Saint Ambrose University,Davenport. IA, NA,24, $46.800, $26.600, 92%, $25.500, $45.800
+548,Indiana Wesleyan University-Marion,Marion. IN, 1120,24, $39.400, $21.400, 82%, $23.960, $46.500
+549,St Bonaventure University,Saint Bonaventure. NY, 1120,24, $49.400, $23.900, 98%, $27.000, $46.200
+550,Bellarmine University,Louisville. KY, 1130,25, $61.900, $26.400, 93%, $25.000, $47.600
+551,University of Kentucky,Lexington. KY, 1210,25, $30.800, $20.700, 80%, $23.000, $50.500
+552,Dominican College of Blauvelt,Orangeburg. NY, 980,20, $47.600, $21.300, 89%, $25.500, $50.400
+553,Samford University,Birmingham. AL, 1180,26, $48.500, $32.000, 90%, $20.700, $47.300
+554,Keuka College,Keuka Park. NY, 1060,22, $49.600, $26.900, 85%, $25.000, $44.600
+554,Azusa Pacific University,Azusa. CA, 1110,24, $54.700, $30.700, 93%, $23.090, $49.000
+554,The College of Wooster,Wooster. OH, 1270,27, $64.700, $30.900, 95%, $26.000, $47.800
+557,New College of Florida,Sarasota. FL, 1290,28, $21.600, $13.600, 98%, $15.430, $45.800
+558,North Park University,Chicago. IL, 1100,22, $43.300, $22.000, 93%, $25.620, $45.100
+559,Northern Arizona University,Flagstaff. AZ, NA,NA, $28.100, $15.900, 67%, $19.500, $48.600
+560,Emerson College,Boston. MA, 1280,28, $68.200, $44.900, 60%, $23.250, $48.400
+561,Wisconsin Lutheran College,Milwaukee. WI, 1140,23, $43.900, $22.800, 91%, $24.230, $45.400
+562,Eastern Mennonite University,Harrisonburg. VA, 1080,24, $51.800, $25.600, 74%, $21.700, $44.300
+563,Utica College,Utica. NY, NA,NA, $36.200, $22.600, 71%, $23.500, $46.800
+563,Northern State University,Aberdeen. SD, 1050,22, $22.300, $15.500, 38%, $25.250, $42.200
+563,University of Tulsa,Tulsa. OK, 1300,29, $62.100, $26.800, 89%, $26.000, $58.500
+566,University of Saint Francis-Fort Wayne,Fort Wayne. IN, 1050,22, $44.000, $19.400, 89%, $26.000, $44.900
+567,Bowie State University,Bowie. MD, 950,18, $23.700, $14.000, 63%, $24.000, $49.500
+567,University of Dallas,Irving. TX, 1260,28, $57.300, $28.500, 96%, $26.440, $51.300
+569,The College of Idaho,Caldwell. ID, NA,NA, $43.200, $23.800, 93%, $25.670, $43.800
+570,Robert Morris University Illinois,Chicago. IL, NA,NA, $47.300, $22.200, 96%, $24.330, $43.800
+571,Northland College,Ashland. WI, NA,NA, $49.600, $21.900, 95%, $26.000, $39.300
+572,Concordia College-New York,Bronxville. NY, 1040,21, $48.300, $19.500, 73%, $25.000, $48.600
+573,Vaughn College of Aeronautics & Technology,Flushing. NY, NA,NA, $49.900, $33.300, 69%, $23.380, $52.500
+573,Chatham University,Pittsburgh. PA, NA,NA, $53.200, $27.200, 76%, $19.450, $41.400
+575,Springfield College,Springfield. MA, 1120,27, $55.100, $30.400, 96%, $25.000, $43.100
+576,Emmanuel College,Boston. MA, 1170,27, $59.300, $33.600, 92%, $27.000, $48.600
+577,Nebraska Wesleyan University,Lincoln. NE, 1170,25, $48.600, $26.000, 88%, $24.490, $45.000
+578,Converse College,Spartanburg. SC, 1070,23, $35.700, $20.500, 81%, $26.540, $38.000
+578,Unity College,Unity. ME, NA,NA, $42.400, $27.000, 95%, $27.000, $38.200
+580,Walla Walla University,College Place. WA, NA,NA, $39.200, $25.600, 89%, $27.000, $52.500
+581,Western Carolina University,Cullowhee. NC, 1110,22, $22.400, $15.400, 68%, $22.500, $44.000
+582,Olivet Nazarene University,Bourbonnais. IL, 1130,23, $48.600, $22.500, 93%, $25.000, $48.100
+583,Goucher College,Baltimore. MD, NA,NA, $62.500, $31.700, 96%, $26.000, $48.500
+584,Shippensburg University of Pennsylvania,Shippensburg. PA, 1050,20, $29.500, $20.800, 58%, $25.250, $48.000
+585,Lewis & Clark College,Portland. OR, 1300,29, $64.800, $38.300, 87%, $24.140, $47.400
+585,Transylvania University,Lexington. KY, NA,NA, $52.800, $28.200, 98%, $27.000, $47.000
+587,Geneva College,Beaver Falls. PA, 1100,23, $39.700, $21.400, 93%, $24.850, $46.400
+588,University of Michigan-Dearborn,Dearborn. MI, 1180,25, $39.100, $10.300, 66%, $24.750, $54.400
+589,Benedictine College,Atchison. KS, NA,25, $45.600, $26.400, 86%, $27.000, $47.400
+589,Southern New Hampshire University,Manchester. NH, NA,NA, $52.700, $42.300, 50%, $18.350, $47.400
+591,Cornell College,Mount Vernon. IA, 1220,26, $58.400, $28.800, 99%, $27.000, $48.900
+592,University of Puget Sound,Tacoma. WA, NA,NA, $66.300, $42.800, 99%, $26.700, $52.900
+593,Missouri State University-Springfield,Springfield. MO, 1130,24, $22.000, $16.200, 52%, $22.420, $44.400
+594,Ouachita Baptist University,Arkadelphia. AR, 1140,25, $39.300, $19.100, 97%, $21.500, $42.700
+595,Concordia University-Irvine,Irvine. CA, 1110,23, $52.400, $26.800, 81%, $22.250, $48.700
+596,Rhode Island School of Design,Providence. RI, 1250,28, $70.600, $42.500, 38%, $27.000, $53.300
+597,Bethel University,Saint Paul. MN, 1200,24, $52.600, $30.600, 88%, $23.450, $50.100
+598,SUNY Buffalo State,Buffalo. NY, 980,NA, $26.300, $13.400, 72%, $20.500, $41.700
+599,Drew University,Madison. NJ, NA,NA, $69.400, $30.800, 88%, $26.670, $51.000
+600,Howard University,Washington. DC, 1190,25, $45.100, $22.500, 69%, $26.000, $54.400
+601,Art Center College of Design,Pasadena. CA, NA,NA, $69.000, $48.700, 63%, $31.620, $62.800
+602,Northwestern College,Orange City. IA, 1120,24, $45.600, $24.900, 99%, $24.250, $42.900
+603,Hendrix College,Conway. AR, 1260,28, $62.800, $23.600, 100%, $27.000, $46.000
+604,Agnes Scott College,Decatur. GA, NA,NA, $56.500, $23.600, 100%, $27.000, $44.700
+605,Virginia Commonwealth University,Richmond. VA, 1170,24, $32.600, $22.100, 56%, $23.250, $48.900
+606,University of Louisville,Louisville. KY, 1180,25, $27.600, $18.200, 79%, $19.760, $48.800
+607,Saint Joseph's College of Maine,Standish. ME, NA,NA, $53.000, $27.400, 70%, $27.000, $46.300
+608,Massachusetts College of Liberal Arts,North Adams. MA, 1080,23, $25.700, $17.700, 76%, $23.370, $43.600
+609,Hofstra University,Hempstead. NY, 1220,27, $64.000, $34.800, 86%, $23.500, $55.000
+610,California University of Pennsylvania,California. PA, 1010,20, $27.500, $19.000, 63%, $24.220, $43.500
+611,University of Mount Olive,Mount Olive. NC, 970,20, $32.600, $16.600, 82%, $29.150, $40.500
+611,Xavier University of Louisiana,New Orleans. LA, 1070,23, $38.100, $18.200, 94%, $25.010, $43.800
+613,Nazareth College,Rochester. NY, NA,NA, $51.700, $31.200, 96%, $26.580, $41.600
+614,Wartburg College,Waverly. IA, 1060,24, $54.200, $24.500, 96%, $27.000, $48.600
+615,The University of Montana-Western,Dillon. MT, 1060,19, $19.200, $12.100, 62%, $22.580, $35.500
+616,Baldwin Wallace University,Berea. OH, NA,NA, $48.100, $25.600, 86%, $27.000, $45.900
+617,Chestnut Hill College,Philadelphia. PA, 1060,22, $54.600, $25.500, 87%, $26.440, $41.800
+618,Hanover College,Hanover. IN, 1170,25, $52.700, $24.000, 100%, $27.000, $46.100
+619,Roger Williams University,Bristol. RI, NA,NA, $55.000, $39.300, 83%, $26.000, $52.300
+620,The University of Alabama,Tuscaloosa. AL, 1170,28, $30.700, $21.300, 57%, $23.290, $51.200
+621,Hampden-Sydney College,Hampden-Sydney. VA, 1160,24, $63.000, $34.600, 99%, $27.000, $55.800
+622,Central Michigan University,Mount Pleasant. MI, 1110,24, $25.100, $15.700, 64%, $27.000, $47.000
+623,Nyack College,Nyack. NY, 990,20, $42.200, $22.500, 94%, $25.000, $45.700
+624,Southeast Missouri State University,Cape Girardeau. MO, NA,23, $21.900, $13.000, 78%, $22.190, $42.900
+625,Xavier University,Cincinnati. OH, 1150,25, $54.700, $32.200, 94%, $27.000, $50.700
+626,Georgia College & State University,Milledgeville. GA, 1180,25, $29.400, $21.400, 78%, $22.000, $44.600
+627,Northwood University,Midland. MI, 1080,23, $42.200, $25.900, 70%, $20.800, $47.000
+628,Mount Saint Joseph University,Cincinnati. OH, 1070,22, $42.400, $19.900, 81%, $28.000, $44.100
+629,Alma College,Alma. MI, 1130,24, $54.800, $23.600, 96%, $27.000, $47.200
+630,College of Saint Elizabeth,Morristown. NJ, 890,NA, $54.400, $21.200, 70%, $25.000, $49.100
+631,The University of Tennessee-Martin,Martin. TN, NA,23, $21.100, $11.800, 87%, $23.760, $44.100
+632,Roanoke College,Salem. VA, 1140,25, $62.000, $31.600, 100%, $27.000, $47.400
+633,University of Mount Union,Alliance. OH, 1090,23, $44.600, $24.600, 96%, $27.440, $47.200
+634,Tougaloo College,Tougaloo. MS, 1030,20, $23.900, $10.500, 98%, $35.500, $37.000
+635,Mount Vernon Nazarene University,Mount Vernon. OH, 1050,22, $43.000, $22.300, 84%, $25.910, $42.800
+636,SUNY College of Technology at Delhi,Delhi. NY, NA,NA, $25.300, $15.700, 66%, $15.250, $43.600
+637,Castleton University,Castleton. VT, 1030,20, $25.800, $17.600, 67%, $25.000, $41.300
+638,Catholic University of America,Washington. DC, NA,NA, $65.300, $37.600, 70%, $26.860, $55.700
+639,Asbury University,Wilmore. KY, 1130,25, $42.400, $24.000, 95%, $25.000, $39.000
+640,Depaul University,Chicago. IL, NA,NA, $58.800, $35.100, 81%, $23.260, $53.800
+641,Webster University,Saint Louis. MO, 1150,24, $47.000, $25.400, 75%, $23.230, $45.100
+642,Western Michigan University,Kalamazoo. MI, 1080,23, $26.300, $16.200, 57%, $26.360, $49.800
+643,Pennsylvania College of Technology,Williamsport. PA, NA,NA, $33.600, $22.400, 66%, $22.440, $51.100
+644,SUNY College at Potsdam,Potsdam. NY, NA,NA, $25.200, $14.700, 80%, $25.500, $42.400
+645,Bennington College,Bennington. VT, NA,NA, $73.900, $34.900, 90%, $25.200, $46.300
+646,Shenandoah University,Winchester. VA, 1110,23, $48.300, $31.200, 99%, $25.000, $48.200
+647,Tuskegee University,Tuskegee. AL, 960,21, $41.100, $32.900, 25%, $32.500, $54.500
+648,University of Cincinnati,Cincinnati. OH, 1230,26, $29.400, $22.500, 60%, $22.500, $52.500
+649,Hannibal-LaGrange University,Hannibal. MO, NA,NA, $37.600, $20.100, 68%, $19.050, $37.300
+650,Earlham College,Richmond. IN, 1300,28, $61.300, $22.100, 94%, $27.000, $48.400
+651,Florida Agricultural and Mechanical University,Tallahassee. FL, 1070,20, $23.900, $14.400, 75%, $28.000, $47.500
+652,SUNY College of Agriculture and Technology at Cobleskill,Cobleskill. NY, 970,20, $25.900, $16.100, 75%, $17.250, $39.900
+653,Kutztown University of Pennsylvania,Kutztown. PA, 1060,21, $28.200, $21.600, 60%, $26.000, $44.000
+654,Georgian Court University,Lakewood. NJ, 1020,20, $53.300, $26.800, 82%, $23.500, $43.200
+655,Mount St. Mary's University,Emmitsburg. MD, 1090,22, $58.600, $30.600, 94%, $26.770, $47.700
+656,North Carolina A & T State University,Greensboro. NC, 1010,20, $18.700, $11.800, 77%, $28.270, $51.800
+657,College of Charleston,Charleston. SC, 1150,25, $31.000, $21.100, 56%, $21.500, $46.000
+658,American International College,Springfield. MA, 1000,20, $53.100, $21.100, 94%, $27.000, $51.200
+659,Southern Connecticut State University,New Haven. CT, 1030,21, $27.000, $16.300, 53%, $23.000, $48.200
+660,Millsaps College,Jackson. MS, 1220,25, $57.800, $25.000, 98%, $27.000, $49.100
+661,Millersville University of Pennsylvania,Millersville. PA, 1070,NA, $30.200, $21.100, 54%, $24.640, $46.600
+662,William Woods University,Fulton. MO, 1110,23, $40.600, $23.000, 84%, $20.550, $40.200
+663,Otterbein University,Westerville. OH, 1170,24, $48.500, $26.000, 88%, $27.000, $47.300
+664,Georgia State University,Atlanta. GA, 1130,23, $27.200, $16.400, 71%, $22.210, $49.400
+665,Reed College,Portland. OR, 1410,32, $72.900, $34.300, 51%, $16.000, $53.900
+666,Pratt Institute-Main,Brooklyn. NY, 1170,27, $68.200, $46.000, 76%, $26.000, $52.100
+667,University of Alabama at Birmingham,Birmingham. AL, 1180,25, $27.300, $18.200, 61%, $21.830, $47.800
+668,Alverno College,Milwaukee. WI, NA,NA, $42.200, $19.200, 92%, $31.000, $45.100
+669,Hampton University,Hampton. VA, 1050,22, $42.400, $27.800, 73%, $27.000, $51.700
+670,The New School,New York. NY, 1210,26, $72.600, $48.700, 86%, $24.530, $52.100
+671,University of the Incarnate Word,San Antonio. TX, 1030,20, $48.800, $23.400, 75%, $27.250, $45.700
+672,Arcadia University,Glenside. PA, 1150,25, $61.200, $29.400, 92%, $27.000, $43.800
+673,Keiser University-Ft Lauderdale,Fort Lauderdale. FL, NA,NA, $42.000, $28.500, 84%, $25.700, $44.000
+673,Birmingham Southern College,Birmingham. AL, 1150,26, $54.700, $25.500, 99%, $26.050, $47.900
+675,Spring Arbor University,Spring Arbor. MI, 1100,24, $41.700, $20.200, 82%, $24.050, $40.400
+676,California College of the Arts,San Francisco. CA, NA,NA, $68.000, $40.800, 73%, $27.000, $56.600
+677,University of Montana,Missoula. MT, 1170,24, $21.400, $14.600, 59%, $22.980, $45.300
+678,Gordon College,Wenham. MA, 1170,26, $52.200, $33.000, 98%, $27.000, $47.800
+679,Rollins College,Winter Park. FL, NA,NA, $70.800, $37.900, 85%, $25.250, $46.900
+680,Toccoa Falls College,Toccoa Falls. GA, 1040,21, $37.800, $21.800, 60%, $24.610, $38.200
+681,Eastern Kentucky University,Richmond. KY, 1050,23, $24.100, $13.500, 80%, $23.130, $44.800
+682,Doane University-Arts & Sciences,Crete. NE, NA,23, $48.800, $26.100, 99%, $23.860, $47.100
+683,University of Bridgeport,Bridgeport. CT, 960,21, $56.900, $24.500, 81%, $27.000, $48.300
+684,School of the Art Institute of Chicago,Chicago. IL, 1230,26, $70.300, $48.800, 89%, $26.980, $45.700
+685,Mercer University,Macon. GA, 1260,28, $53.600, $22.700, 91%, $25.500, $48.300
+686,Lock Haven University,Lock Haven. PA, 1010,19, $27.700, $18.400, 63%, $27.000, $41.000
+686,Oklahoma City University,Oklahoma City. OK, 1200,26, $47.400, $29.100, 87%, $21.800, $46.200
+688,Winthrop University,Rock Hill. SC, 1090,22, $29.400, $18.100, 80%, $27.000, $43.200
+689,Barton College,Wilson. NC, 1050,21, $47.500, $25.100, 97%, $26.000, $42.400
+690,Brenau University,Gainesville. GA, 990,20, $46.900, $22.400, 78%, $27.000, $43.100
+691,California Baptist University,Riverside. CA, 1090,22, $48.000, $27.400, 83%, $27.000, $45.900
+692,Morehouse College,Atlanta. GA, 1060,21, $50.900, $32.600, 76%, $26.000, $54.800
+693,Johnson & Wales University-Providence,Providence. RI, NA,NA, $51.400, $29.000, 91%, $25.900, $46.400
+693,Hilbert College,Hamburg. NY, NA,NA, $34.800, $19.000, 93%, $25.410, $39.200
+695,Indiana University of Pennsylvania,Indiana. PA, 1020,20, $28.500, $20.500, 67%, $27.000, $45.900
+696,Ringling College of Art and Design,Sarasota. FL, NA,NA, $68.400, $53.200, 88%, $27.000, $47.300
+697,Western Kentucky University,Bowling Green. KY, 1080,23, $22.500, $12.600, 68%, $23.200, $44.700
+698,Husson University,Bangor. ME, 1040,23, $31.600, $20.700, 84%, $24.730, $42.900
+699,Maryland Institute College of Art,Baltimore. MD, 1180,27, $65.600, $44.200, 98%, $27.000, $47.700
+700,Upper Iowa University,Fayette. IA, 950,21, $46.200, $25.100, 61%, $23.000, $43.900
+701,Bowling Green State University,Bowling Green. OH, 1110,22, $25.700, $19.100, 69%, $26.000, $46.100
+702,Virginia State University,Petersburg. VA, 920,17, $23.600, $17.300, 92%, $29.750, $44.000
+703,Randolph-Macon College,Ashland. VA, 1140,24, $56.600, $28.400, 99%, $27.000, $45.100
+704,Berry College,Mount Berry. GA, 1210,27, $52.900, $27.900, 99%, $24.090, $43.400
+705,Florida Southern College,Lakeland. FL, 1160,27, $52.100, $26.600, 93%, $24.880, $44.600
+706,Saint Leo University,Saint Leo. FL, 1020,23, $40.200, $21.900, 73%, $24.750, $44.900
+707,Clarion University of Pennsylvania,Clarion. PA, 1020,21, $28.600, $19.700, 68%, $26.250, $43.200
+708,North Carolina Central University,Durham. NC, 970,19, $23.200, $13.500, 78%, $31.000, $43.300
+709,Hollins University,Roanoke. VA, 1200,26, $56.600, $20.800, 99%, $27.000, $40.900
+710,University of Montevallo,Montevallo. AL, 1050,23, $26.800, $17.200, 80%, $24.260, $38.300
+711,Westminster College - Missouri,Fulton. MO, 1100,24, $42.300, $21.500, 97%, $26.000, $47.700
+712,Stetson UniversityDe,Land. FL, NA,NA, $64.100, $29.100, 99%, $27.000, $46.000
+713,Claflin University,Orangeburg. SC, 960,19, $34.100, $19.300, 95%, $33.000, $36.000
+714,Belhaven University,Jackson. MS, NA,NA, $35.900, $19.000, 83%, $27.000, $41.400
+715,Paul Smiths College of Arts and Science,Paul Smiths. NY, NA,NA, $46.500, $28.500, 97%, $21.500, $36.000
+716,Mansfield University of Pennsylvania,Mansfield. PA, 1040,20, $30.000, $21.000, 72%, $27.000, $42.800
+717,Mercy College,Dobbs Ferry. NY, NA,NA, $38.900, $17.300, 63%, $23.690, $46.000
+718,Belmont University,Nashville. TN, 1230,27, $53.000, $37.800, 70%, $21.250, $46.000
+719,Eckerd College,Saint Petersburg. FL, 1160,26, $61.800, $36.200, 95%, $26.550, $47.300
+720,Milwaukee Institute of Art & Design,Milwaukee. WI, NA,NA, $50.000, $26.500, 100%, $27.000, $43.200
+721,Berklee College of Music,Boston. MA, NA,NA, $66.400, $44.200, 57%, $23.500, $46.500
+722,Eastern University,Saint Davids. PA, 1100,23, $50.400, $25.300, 91%, $26.500, $43.700
+723,California Institute of the Arts,Valencia. CA, NA,NA, $72.100, $54.700, 76%, $27.000, $53.200
+724,Hiram College,Hiram. OH, 1070,21, $49.900, $23.900, 79%, $27.000, $44.800
+725,Coker University,Hartsville. SC, 1010,19, $42.000, $17.600, 86%, $27.000, $37.000
+726,Olivet College,Olivet. MI, NA,NA, $41.700, $21.700, 95%, $27.000, $44.500
+727,Meredith College,Raleigh. NC, 1100,23, $51.500, $27.000, 96%, $26.000, $42.500
+728,Mercyhurst University,Erie. PA, NA,NA, $54.100, $21.100, 96%, $26.850, $44.100
+729,Ohio University,Athens. OH, 1170,24, $28.500, $23.100, 58%, $20.070, $50.200
+730,Dillard University,New Orleans. LA, 910,20, $35.400, $18.400, 93%, $36.000, $43.400
+731,Lincoln University,Lincoln University. PA, 970,19, $28.600, $19.500, 89%, $31.000, $47.200
+732,Kent State University at Kent,Kent. OH, 1130,23, $26.600, $19.400, 67%, $25.250, $44.600
+733,University of the District of Columbia,Washington. DC, NA,NA, $36.100, $17.900, 55%, $23.500, $51.300
+734,Marywood University,Scranton. PA, 1020,23, $52.600, $26.800, 90%, $27.000, $41.800
+735,High Point University,High Point. NC, 1150,24, $53.400, $41.700, 74%, $25.000, $47.100
+736,Clark Atlanta University,Atlanta. GA, 990,20, $39.000, $28.600, 83%, $31.000, $45.800
+737,New England College,Henniker. NH, NA,NA, $56.200, $29.300, 79%, $26.000, $43.900
+738,Savannah College of Art and Design,Savannah. GA, 1130,24, $58.900, $44.600, 91%, $26.370, $45.500
+739,Johnson C Smith University,Charlotte. NC, 850,17, $33.600, $19.300, 94%, $32.500, $45.100
+740,Glenville State College,Glenville. WV, NA,NA, $24.200, $13.400, 80%, $23.910, $38.200
+741,Davenport University,Grand Rapids. MI, NA,NA, $32.000, $17.900, 79%, $26.910, $45.100
+742,Oakwood University,Huntsville. AL, 1000,20, $37.300, $27.300, 90%, $31.000, $42.300
+743,Regent University,Virginia Beach. VA, 1060,23, $30.500, $19.000, 87%, $25.000, $40.600
+744,The University of the Arts,Philadelphia. PA, NA,NA, $68.200, $42.000, 97%, $27.000, $46.200
