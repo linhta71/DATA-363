@@ -1,0 +1,32 @@
+---
+title: "Project Sandbox"
+author: "Hung Tran, Linh Ta"
+date: "6/17/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE, echo = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# This file is a sandbox. It should contain explorations with the dataset, along with useful comments for each exploration.
+
+# It is important that each sanbox section should be documented of its purpose and methods, and should not spam the whole document (use filter, head, tail, etc.).
+
+# The dataset of info on colleges listed
+(college_ds = read.csv("data/project_data.csv"))
+
+# Creating blocks with include=FALSE can make space to leave comments per section, like this one.
+```
+
+```{r, visualize college_ds}
+# See the dataset of the best and worst 10 rankings of colleges
+head(college_ds, 10)
+tail(college_ds, 10)
+
+# Plot the dataset of median SAT and median ACT per college into the reported early career earnings in that college.
+# SAT score has a much higher range than ACT, so the graph looks more "continuous"
+plot(college_ds$Median.SAT, college_ds$Early.career.earnings)
+# ACT score has less range, so the graph looks "discrete"
+plot(college_ds$Median.ACT, college_ds$Early.career.earnings)
+```
+
