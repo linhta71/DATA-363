@@ -1,5 +1,6 @@
 from __future__ import print_function
 import sys
+import traceback
 
 def nop(*args):
     """
@@ -7,7 +8,85 @@ def nop(*args):
     """
     return None
 def eprint(*args, **kwargs):
+    """
+    The exact same semantics as Python's print, but this prints to standard error
+    """
     print(*args, file=sys.stderr, **kwargs)
+
+def process_matrix(matrix, process_func, column_indices=None, row_indices=None):
+    """
+    matrix: Matrix([m][n] yields row m column n) the matrix that we want to do
+        the operation on
+    process_func: function pointer that takes in value at specified column and row
+        as input and return the output of the processing given that input.
+    column_indices: collection of matrix column indices that we want to process.
+        None means all columns
+    row_indices: collection of matrix row indices that we want to process.
+        None means all rows (except first row)
+
+    This function rewrites values from specified columns and rows with the
+        result of process_func.
+    For example: process_matrix(dataset, add_one, 5) performs add_one on all
+        values of column 5 (perform add_one in column of est. price without aid
+        in our dataset)
+    """
+    # Set to "all" if None
+    if row_indices is None:
+        row_indices = range(1, len(matrix))
+    if column_indices is None:
+        column_indices = range(len(matrix[0]))
+    # Perform process_func on all declared indices
+    for r in row_indices:
+        for c in column_indices:
+            matrix[r][c] = process_func(matrix[r][c])
+    return matrix
+
+def make_number(noisy_str):
+    """
+    noisy_str: string that contains leading and trailing non-digit characters
+    
+    This function attempts to remove as many leading and trailing non-digit
+        characters (with exceptions like '-' on prefix) to make a valid float
+        string. (Does not support hexadecimal or binary string format,
+        space and whitespace will mess up the function).
+
+        "$72.000" -> 72.00
+    """
+    try:
+        # Find first and last digit (to determine leading and trailing chars
+        digit_i = [i for i,c in enumerate(noisy_str) if c.isdigit()]
+        if len(digit_i) == 0:
+            # not a number, return whatever was passed in
+            return noisy_str
+        dot_i = [i for i,c in enumerate(noisy_str) if c == '.']
+        num_end = digit_i[-1] + 1
+        num_begin = digit_i[0]
+        if num_begin > 0 and noisy_str[num_begin - 1] == '-':
+            # number is negative
+            num_begin -= 1
+        floatified_str = ""
+        if len(dot_i) > 1:
+            # More than one dot, the string probably uses '.' to separate thousands
+            # ignore the dots.
+            cstr = []
+            for i in range(num_end, num_begin):
+                if i in dot_i:
+                    continue
+                cstr.append(noisy_str[i])
+            floatified_str = "".join(cstr)
+        else:
+            # No interuption just make the substring.
+            floatified_str = noisy_str[num_begin:num_end]
+        # Check for trailing "%"
+        if num_end < len(noisy_str) and noisy_str[num_end] == '%':
+            # Is percentage, convert it to float then divide it by 100
+            floatified_str = str(float(floatified_str)/100)
+        return floatified_str
+    except Exception as e:
+        eprint("Error parsing \"%s\" returning \"NA\"" % noisy_str)
+        traceback.print_exc()
+        return "NA"
+    
 def split_column(matrix, column_index,
                  first_row_split_func = nop, split_func = nop):
     """

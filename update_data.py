@@ -15,6 +15,7 @@ def upd_col_char_to_earnings():
     data = retrieve_data.get_matrix()
 
     # Reprocess data
+    print("Post-processing data")
     COLLEGE_NAME_COL = 1
     SAT_ACT_COL = 2
     # split the college name and location
@@ -25,6 +26,10 @@ def upd_col_char_to_earnings():
     SAT_ACT_COL += 1
     reform.split_column(data, SAT_ACT_COL, reform.split_fr_median_score,
                         reform.split_score)
+
+    # remove symbols like % or $ in number data (from Median SAT columns to
+    # Early career earnings)
+    reform.process_matrix(data, reform.make_number, range(3,10))
     # Save it as project_data.csv
     retrieve_data.serialize_list(data, data_fname = "project_data.csv")
     return data
