@@ -181,7 +181,8 @@ def split_score(merged_score):
     This function splits the score by delim = "/"
     """
     spl = merged_score.split("/")
-    return (spl[0], spl[1])
+    # No whitespace so no weird stuff like " NA" >:(
+    return (spl[0].strip(), spl[1].strip())
 
 def split_fr_college_name(*ignored_args):
     """
