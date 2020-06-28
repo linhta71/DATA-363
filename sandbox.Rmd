@@ -33,7 +33,8 @@ plot(college_ds$Median.ACT, college_ds$Early.career.earnings)
 ```{r, filter rows with both median SAT and median ACT are NAs}
 # Get rows that have no NA, or only one of SAT, ACT is NA. Omit if both is NA.
 college_ds_predict = subset(college_ds, !is.na(Median.SAT) | !is.na(Median.ACT))
-corr_c_ds_f = cor(college_ds_f$Median.ACT, college_ds_f$Early.career.earnings)
+corr_c_ds_act = cor(college_ds_no_na$Median.ACT, college_ds_no_na$Early.career.earnings)
+corr_c_ds_sat = cor(college_ds_no_na$Median.SAT, college_ds_no_na$Early.career.earnings)
 # college_ds_no_na = subset(college_ds, !(is.na(Median.SAT) & is.na(Median.ACT)))
 # Omit the row where ANY column of (SAT, ACT) is NA.
 college_ds_no_na = subset(college_ds, !is.na(Median.SAT) & !is.na(Median.ACT))
@@ -41,6 +42,70 @@ college_ds_no_na = subset(college_ds, !is.na(Median.SAT) & !is.na(Median.ACT))
 
 ```{r, predict NA ACT}
 plot(college_ds_no_na$Median.SAT, college_ds_no_na$Median.ACT)
-predict_ACT_lm = lm(college_ds_no_na$Median.ACT ~ college_ds_no_na$Median.SAT)
+ACT_bounds = c(1, 36)
+clamp <- function(x, bounds) {
+  pmax(pmin(x, bounds[2]), bounds[1])
+}
+predict_ACT_lm = lm(Median.ACT ~ Median.SAT, data = college_ds_no_na)
+
+# <not necessary>
+act_pred = clamp(predict(predict_ACT_lm),ACT_bounds)
+par(new = TRUE)
+# Plot prediction on the trained dataset
+points(college_ds_no_na$Median.SAT, act_pred, type = "l", col = "blue")
+# </not necessary>
+```
+
+```{r}
+# Plot ACT prediction from SAT from dataset with NAs
+pred_ACT_na = clamp(round(predict(predict_ACT_lm, newdata = college_ds_predict)), ACT_bounds)
+plot(college_ds_predict$Median.SAT, pred_ACT_na)
+names(pred_ACT_na) <- NULL
+
+# Intersection, but only take values that are NA in college_ds_predict
+sum(is.na(college_ds_predict$Median.ACT))
+college_ds_predict
+college_ds_predict$MedACT_pred = pred_ACT_na
+college_ds_predict<- within(college_ds_predict, Median.ACT[is.na(Median.ACT)] <- MedACT_pred[is.na(Median.ACT)])
+college_ds_predict$MedACT_pred <- NULL
+sum(is.na(college_ds_predict$Median.ACT))
+```
+
+```{r}
+# Predict SAT based on ACT
+predict_SAT_lm = lm(Median.SAT ~ Median.ACT, data = college_ds_no_na)
+# Use the trained model to predict the datsset with NA
+SAT_bounds = c(0,1600)
+# predict, round to the nearest tenth, then clamp to the possible score
+pred_SAT_na = clamp(round(predict(predict_SAT_lm, newdata= college_ds_predict)/10)*10, SAT_bounds)
+college_ds_predict$MedSAT_pred = pred_SAT_na
+# Intersection
+college_ds_predict<- within(college_ds_predict, Median.SAT[is.na(Median.SAT)] <- MedSAT_pred[is.na(Median.SAT)])
+college_ds_predict$MedSAT_pred <- NULL
+```
+
+```{r}
+plot(college_ds$Est..price.2019.20.without.aid, college_ds$Early.career.earnings)
+cor(college_ds$Est..price.2019.20.without.aid, college_ds$Early.career.earnings)
+plot(college_ds$Est..price.2019.20.with.avg..grant, college_ds$Early.career.earnings)
+cor(college_ds$Est..price.2019.20.with.avg..grant, college_ds$Early.career.earnings)
+plot(college_ds$X..of.students.who.get.any.grants, college_ds$Early.career.earnings)
+cor(college_ds$X..of.students.who.get.any.grants, college_ds$Early.career.earnings)
+```
+
+
+
+```{r}
+# Assuming price w/ avg grant is price given that the student has any grant minus mean grant in that college
+college_ds$Est_grant = college_ds$Est..price.2019.20.without.aid - college_ds$Est..price.2019.20.with.avg..grant
+
+# Est_avg_price = Est_avg_price_no_aid * (1-prob_any_aid) + Est_avg_price_aid * (prob_any_aid)
+college_ds$Est_avg_price = college_ds$Est..price.2019.20.with.avg..grant * college_ds$X..of.students.who.get.any.grants +
+  college_ds$Est..price.2019.20.without.aid * (1-college_ds$X..of.students.who.get.any.grants)
+plot(college_ds$Est_grant, college_ds$Early.career.earnings)
+cor(college_ds$Est_grant, college_ds$Early.career.earnings)
+plot(college_ds$Est_avg_price, college_ds$Early.career.earnings)
+cor(college_ds$Est_avg_price, college_ds$Early.career.earnings)
+
 ```
 

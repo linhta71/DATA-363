@@ -1,6 +1,8 @@
 ---
-title: "project prep quizz"
-output: html_document
+title: ""
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 
@@ -12,15 +14,17 @@ knitr::opts_chunk$set(echo = TRUE)
 # It is important that each sanbox section should be documented of its purpose and methods, and should not spam the whole document (use filter, head, tail, etc.).
 
 # The dataset of info on colleges listed
-(college_ds = read.csv("data/projectdatamain.csv"))
+(college_ds = read.csv("data/project_data.csv"))
+# Contains only median scores, and early earnings
+vital_college_ds = subset(college_ds, select = c(Median.SAT, Median.ACT, Early.career.earnings))
 
 # Creating blocks with include=FALSE can make space to leave comments per section, like this one.
 ```
 
 ```{r, visualize college_ds}
 # See the dataset of the best and worst 10 rankings of colleges
-head(college_ds, 10)
-tail(college_ds, 10)
+head(vital_college_ds, 10)
+tail(vital_college_ds, 10)
 
 # Plot the dataset of median SAT and median ACT per college into the reported early career earnings in that college.
 # SAT score has a much higher range than ACT, so the graph looks more "continuous"
@@ -29,19 +33,32 @@ plot(college_ds$Median.SAT, college_ds$Early.career.earnings)
 plot(college_ds$Median.ACT, college_ds$Early.career.earnings)
 ```
 ```{r}
+# Contains absolutely no NA
 college_ds_no_na = subset(college_ds, !is.na(Median.SAT) & !is.na(Median.ACT))
-new <- na.omit(college_ds_no_na)
+# Contains only one column of NA per row (so that we can predict missing Median ACT)
+college_ds_predict <- subset(college_ds, !is.na(Median.SAT) | !is.na(Median.ACT))
 ```
 
-```{r}
-college_ds_no_na$Median.ACT[1]
-```
 
 ```{r}
+# summary(college_ds_no_na)
 hist(college_ds_no_na$Median.ACT)
-#hist(college_ds_no_na$Median.ACT)
-#hist(college_ds_no_na$Early.career.earnings)
-summary(college_ds_no_na);summary(college_ds_no_na$Median.SAT);summary(college_ds_no_na$Median.ACT)
+summary(college_ds_no_na$Median.ACT)
+```
+The median ACT score for the colleges in the database has the mean at around 25. The histogram of the frequency suggests that colleges tend to accept students with ACT scores slightly above the median (mean > median). The right skewness of the histogram suggests that colleges with median ACT score acceptance tend to be more specific on the requirements as the frequency tends to spread out as the score goes above the mean (25.5). 
+
+```{r}
+hist(college_ds_no_na$Median.SAT)
+summary(college_ds_no_na$Median.SAT)
 ```
 
-In our project, we will investigate whether SAT/ACT will contribute to the early career earning. WE have plotted out 2 plots of median SAT vs early career earning and median ACT vs early career earning. WE found out that there is a relationhsip between median ACT/SAT vs early career earning since both plots are increasing. WE will get into the detail about do the 3 variables interact with each other throgh linear regression model, and we may get anothor predict of predeiction of ACT and SAT if we have sufficient time. 
+The shape of the histogram in median SAT resembles that of the median ACT. The mean (1187) also surpasses the median (1170), and the graph is also right-skewed.
+
+```{r}
+hist(college_ds_no_na$Early.career.earnings)
+summary(college_ds_no_na$Early.career.earnings)
+```
+
+The shape of the histogram of early career earnings also resembles the two above histograms. The mean earning (\$51,670) also surpasses the median (\$50,200). Overall, this histogram spreads out a lot less than the two above histograms, but it still remains right-skewed. This suggests that most people graduating from college will tend to have a specific amount of earnings in their early careers. However, there are cases where people may earn just less than twice the common amount of earning.
+
+In our project, we will investigate whether SAT/ACT contributes to the early career earning. We have plotted out 2 plots of median SAT vs early career earning and median ACT vs early career earning. We found out that there is a relationship between median ACT/SAT vs early career earning since both plots are increasing. We will get into the detail about how the 3 variables interact with each other through linear regression model and may predict missing ACT scores based on the given SAT score if we have sufficient time. 
