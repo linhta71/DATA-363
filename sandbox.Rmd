@@ -33,11 +33,11 @@ plot(college_ds$Median.ACT, college_ds$Early.career.earnings)
 ```{r, filter rows with both median SAT and median ACT are NAs}
 # Get rows that have no NA, or only one of SAT, ACT is NA. Omit if both is NA.
 college_ds_predict = subset(college_ds, !is.na(Median.SAT) | !is.na(Median.ACT))
-corr_c_ds_act = cor(college_ds_no_na$Median.ACT, college_ds_no_na$Early.career.earnings)
-corr_c_ds_sat = cor(college_ds_no_na$Median.SAT, college_ds_no_na$Early.career.earnings)
 # college_ds_no_na = subset(college_ds, !(is.na(Median.SAT) & is.na(Median.ACT)))
 # Omit the row where ANY column of (SAT, ACT) is NA.
 college_ds_no_na = subset(college_ds, !is.na(Median.SAT) & !is.na(Median.ACT))
+corr_c_ds_act = cor(college_ds_no_na$Median.ACT, college_ds_no_na$Early.career.earnings)
+corr_c_ds_sat = cor(college_ds_no_na$Median.SAT, college_ds_no_na$Early.career.earnings)
 ```
 
 ```{r, predict NA ACT}
@@ -63,11 +63,12 @@ plot(college_ds_predict$Median.SAT, pred_ACT_na)
 names(pred_ACT_na) <- NULL
 
 # Intersection, but only take values that are NA in college_ds_predict
+# How many NA?
 sum(is.na(college_ds_predict$Median.ACT))
-college_ds_predict
 college_ds_predict$MedACT_pred = pred_ACT_na
 college_ds_predict<- within(college_ds_predict, Median.ACT[is.na(Median.ACT)] <- MedACT_pred[is.na(Median.ACT)])
 college_ds_predict$MedACT_pred <- NULL
+# How many NA?
 sum(is.na(college_ds_predict$Median.ACT))
 ```
 
