@@ -105,8 +105,9 @@ college_ds$Est_avg_price = college_ds$Est..price.2019.20.with.avg..grant * colle
   college_ds$Est..price.2019.20.without.aid * (1-college_ds$X..of.students.who.get.any.grants)
 plot(college_ds$Est_grant, college_ds$Early.career.earnings)
 cor(college_ds$Est_grant, college_ds$Early.career.earnings)
-plot(college_ds$Est_avg_price, college_ds$Early.career.earnings)
-cor(college_ds$Est_avg_price, college_ds$Early.career.earnings)
+trans_ = (college_ds$Est_avg_price)
+plot(trans_, college_ds$Early.career.earnings)
+cor(trans_, college_ds$Early.career.earnings)
 
 ```
 
