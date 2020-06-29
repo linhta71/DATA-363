@@ -20,7 +20,7 @@ head(college_ds, 10)
 tail(college_ds, 10)
 # Plot the dataset of median SAT and median ACT per college into the reported early career earnings in that college.
 # SAT score has a much higher range than ACT, so the graph looks more "continuous"
-plot(college_ds$Median.SAT, college_ds$Early.career.earnings)
+plot(college_ds$Median.SAT, college_ds$Early.career.earnings, main = "ACT vs Early career earnings", xlab = "Score", ylab = "Thousands of dollars")
 # ACT score has less range, so the graph looks "discrete"
 plot(college_ds$Median.ACT, college_ds$Early.career.earnings)
 ```
@@ -42,16 +42,19 @@ college_ds_no_na = subset(college_ds, !is.na(Median.SAT) & !is.na(Median.ACT))
 ```{r, predict NA ACT}
 plot(college_ds_no_na$Median.SAT, college_ds_no_na$Median.ACT)
 predict_ACT_lm = lm(college_ds_no_na$Median.ACT ~ college_ds_no_na$Median.SAT)
+cor(college_ds_no_na$Median.ACT,college_ds_no_na$Median.SAT)
 ```
 
 ```{r}
-hist(college_ds_no_na$Median.SAT)
-hist(college_ds_no_na$Median.ACT)
-hist(college_ds_no_na$Early.career.earnings)
-summary(college_ds_no_na$Median.SAT); summary(college_ds_no_na$Median.ACT); summary(college_ds_no_na$Early.career.earnings)
-```
+hist(college_ds_no_na$Median.SAT, main = "Median SAT", xlab = "score" )
+hist(college_ds_no_na$Median.ACT, main = "Median ACT", xlab = "score")
+hist(college_ds_no_na$Est..price.2019.20.without.aid, main = "Estimated 2019-20 Price Without Aid", xlab = "Thousands of dollars")
+hist(college_ds_no_na$Est..price.2019.20.with.avg..grant, main = "Estimated Price With Average Grant", xlab = "Thousands of dollars")
+hist(college_ds_no_na$X..of.students.who.get.any.grants, main = "% Of Students Who Get Any Grants",xlab = "Percentage")
+hist(college_ds_no_na$Average.student.debt, main = "Average Student debt",xlab = "Thousands of dollars")
+hist(college_ds_no_na$Early.career.earnings, main = "Early Career Earnings",xlab = "Thousands of dollars")
 
-In our project, we will investigate whether SAT/ACT will contribute to the early career earning. WE have plotted out 2 plots of median SAT vs early career earning and median ACT vs early career earning. WE found out that there is a relationhsip between median ACT/SAT vs early career earning since both plots are increasing. WE will get into the detail about do the 3 variables interact with each other throgh linear regression model, and we may get anothor predict of predeiction of ACT and SAT if we have sufficient time. 
+```
 
 ```{r}
 # find out if there is a strong, fair, or weak correlation between median SAT/ACT with early career earning. 
@@ -62,4 +65,37 @@ cor(college_ds_no_na$Median.ACT, college_ds_no_na$Early.career.earnings)
 lg.ACT <- lm(college_ds_no_na$Median.ACT~college_ds_no_na$Early.career.earnings)
 summary(lg.ACT)
 ```
+```{r}
+scatter.smooth(college_ds_no_na$Median.SAT, college_ds_no_na$Early.career.earnings,main = "SAT vs Early career earnings", xlab = "Score", ylab = "Thousands of dollars")
+summary(college_ds_no_na$Median.SAT)
+cor(college_ds_no_na$Median.SAT, college_ds_no_na$Early.career.earnings)
+```
+```{r}
+scatter.smooth(college_ds_no_na$Median.ACT, college_ds_no_na$Early.career.earnings,main = "ACT vs Early career earnings", xlab = "Score", ylab = "Thousands of dollars")
+summary(college_ds_no_na$Median.ACT)
+cor(college_ds_no_na$Median.ACT, college_ds_no_na$Early.career.earnings)
+```
+```{r}
+trans_est <- log(college_ds_no_na$Est..price.2019.20.without.aid)
+trans_Ear <- log(college_ds_no_na$Early.career.earnings)
+scatter.smooth(college_ds_no_na$Est..price.2019.20.without.aid, college_ds_no_na$Early.career.earnings,main = "Price 2019-20 without aid vs Early career earnings", xlab = "Price without aid (Thousands of dollars)", ylab = "Earnings (Thousands of dollars)")
+summary(college_ds_no_na$Est..price.2019.20.without.aid)
+cor(college_ds_no_na$Est..price.2019.20.without.aid,college_ds_no_na$Early.career.earnings)
+```
 
+```{r}
+scatter.smooth(college_ds_no_na$Est..price.2019.20.with.avg..grant, college_ds_no_na$Early.career.earnings,main = "Price 2019-20 with average grant vs Early career earnings", xlab = "Price 2019-20 with average grant (Thousands of dollars)", ylab = "Earnings (Thousands of dollars)")
+cor(college_ds_no_na$Est..price.2019.20.with.avg..grant,college_ds_no_na$Early.career.earnings)
+summary(college_ds_no_na$Est..price.2019.20.with.avg..grant)
+```
+```{r}
+scatter.smooth(college_ds_no_na$X..of.students.who.get.any.grants, college_ds_no_na$Early.career.earnings,main = "% Of students who get any grants vs Early career earnings", xlab = "Percentage", ylab = "Earnings (Thousands of dollars)")
+cor(college_ds_no_na$X..of.students.who.get.any.grants,college_ds_no_na$Early.career.earnings)
+summary(college_ds_no_na$X..of.students.who.get.any.grants)
+```
+
+```{r}
+scatter.smooth(college_ds_no_na$Average.student.debt, college_ds_no_na$Early.career.earnings,main = "Average student debt vs Early career earnings", xlab = "Average student debt (Thousands of dollars)", ylab = "Earnings (Thousands of dollars)")
+cor(college_ds_no_na$Average.student.debt,college_ds_no_na$Early.career.earnings)
+summary(college_ds_no_na$Average.student.debt)
+```
