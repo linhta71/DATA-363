@@ -1,6 +1,7 @@
 from __future__ import print_function
 import sys
 import traceback
+import csv
 
 def nop(*args):
     """
@@ -40,6 +41,13 @@ def process_matrix(matrix, process_func, column_indices=None, row_indices=None):
         for c in column_indices:
             matrix[r][c] = process_func(matrix[r][c])
     return matrix
+
+def retrieve_public_dict(csv_filepath):
+    mydict = {}
+    with open(csv_filepath, mode = 'r') as infile:
+        reader = csv.reader(infile)
+        mydict = {row[0]:row[10] for row in reader}
+    return mydict
 
 def make_number(noisy_str):
     """
@@ -86,7 +94,19 @@ def make_number(noisy_str):
         eprint("Error parsing \"%s\" returning \"NA\"" % noisy_str)
         traceback.print_exc()
         return "NA"
-    
+
+def split_column_adv(matrix, column_index, split_see_column_index,
+                 first_row_split_func = nop, split_func = nop):
+    for r in range(len(matrix)):
+        # spl_func is first row split if r == 0 (first row), normal split func
+        # otherwise.
+        spl_func = first_row_split_func if r == 0 else split_func
+        left, right = spl_func([matrix[r][i] for i in split_see_column_index])
+        # Insert the @left to the inserted index
+        matrix[r].insert(column_index, left)
+        # Assign the right (which is storing unsplited string) to be @right
+        matrix[r][column_index+1] = right
+    return matrix[r]
 def split_column(matrix, column_index,
                  first_row_split_func = nop, split_func = nop):
     """

@@ -25,9 +25,12 @@ tail(college_ds, 10)
 
 # Plot the dataset of median SAT and median ACT per college into the reported early career earnings in that college.
 # SAT score has a much higher range than ACT, so the graph looks more "continuous"
-plot(college_ds$Median.SAT, college_ds$Early.career.earnings)
+scatter.smooth(college_ds$Median.SAT, (college_ds$Early.career.earnings)^(1/2))
 # ACT score has less range, so the graph looks "discrete"
-plot(college_ds$Median.ACT, college_ds$Early.career.earnings)
+scatter.smooth(college_ds$Median.ACT, (college_ds$Early.career.earnings)^(1/2))
+
+scatter.smooth(college_ds$Median.SAT, (college_ds$Early.career.earnings))
+scatter.smooth(college_ds$Median.ACT, (college_ds$Early.career.earnings))
 ```
 
 ```{r, filter rows with both median SAT and median ACT are NAs}
@@ -103,11 +106,87 @@ college_ds$Est_grant = college_ds$Est..price.2019.20.without.aid - college_ds$Es
 # Est_avg_price = Est_avg_price_no_aid * (1-prob_any_aid) + Est_avg_price_aid * (prob_any_aid)
 college_ds$Est_avg_price = college_ds$Est..price.2019.20.with.avg..grant * college_ds$X..of.students.who.get.any.grants +
   college_ds$Est..price.2019.20.without.aid * (1-college_ds$X..of.students.who.get.any.grants)
+college_ds_no_na$Est_avg_price = college_ds_no_na$Est..price.2019.20.with.avg..grant * college_ds_no_na$X..of.students.who.get.any.grants +
+  college_ds_no_na$Est..price.2019.20.without.aid * (1-college_ds_no_na$X..of.students.who.get.any.grants)
 plot(college_ds$Est_grant, college_ds$Early.career.earnings)
 cor(college_ds$Est_grant, college_ds$Early.career.earnings)
-trans_ = (college_ds$Est_avg_price)
-plot(trans_, college_ds$Early.career.earnings)
-cor(trans_, college_ds$Early.career.earnings)
+# 0.4905114 (college_ds$Est_avg_price)
+trans_avg_price = (college_ds$Est_avg_price)
+# 0.4905114 (log(college_ds$Early.career.earnings))
+trans_early_career = (log(college_ds$Early.career.earnings))
+scatter.smooth(trans_avg_price, trans_early_career)
+cor(trans_avg_price, trans_early_career)
 
+```
+
+```{r}
+# ^(1/1,95)
+# [1] 0.7101986
+# [1] 0.6852481
+trans_early_career_earnings = (college_ds_no_na$Early.career.earnings)^(1/2)
+x_trans <- function(x) {
+  return((x))
+}
+# SAT score has a much higher range than ACT, so the graph looks more "continuous"
+scatter.smooth(x_trans(college_ds_no_na$Median.SAT), trans_early_career_earnings)
+# ACT score has less range, so the graph looks "discrete"
+scatter.smooth(x_trans(college_ds_no_na$Median.ACT), trans_early_career_earnings)
+
+scatter.smooth(x_trans(college_ds_no_na$Median.SAT), (college_ds_no_na$Early.career.earnings))
+scatter.smooth(x_trans(college_ds_no_na$Median.ACT), (college_ds_no_na$Early.career.earnings))
+
+# SAT score has a much higher range than ACT, so the graph looks more "continuous"
+cor(x_trans(college_ds_no_na$Median.SAT), trans_early_career_earnings)
+# ACT score has less range, so the graph looks "discrete"
+cor(x_trans(college_ds_no_na$Median.ACT), trans_early_career_earnings)
+
+cor(x_trans(college_ds_no_na$Median.SAT), (college_ds_no_na$Early.career.earnings))
+cor(x_trans(college_ds_no_na$Median.ACT), (college_ds_no_na$Early.career.earnings))
+
+college_ds_no_na$score_ratio = (college_ds_no_na$Median.ACT-min(college_ds_no_na$Median.ACT))/
+  (college_ds_no_na$Median.SAT - min(college_ds_no_na$Median.SAT))
+
+scatter.smooth(x_trans(college_ds_no_na$score_ratio), trans_early_career_earnings)
+cor(x_trans(college_ds_no_na$score_ratio), trans_early_career_earnings)
+
+scatter.smooth(x_trans(college_ds_no_na$score_ratio), college_ds_no_na$Early.career.earnings)
+cor(x_trans(college_ds_no_na$score_ratio), college_ds_no_na$Early.career.earnings)
+
+hist((college_ds$X..of.students.who.get.any.grants)^2.1)
+```
+
+```{r}
+scatter.smooth(college_ds_no_na$Est_avg_price, college_ds_no_na$Median.SAT)
+scatter.smooth(college_ds_no_na$Est_avg_price, college_ds_no_na$Median.ACT)
+lg.avg_price_SAT = lm(college_ds_no_na$Est_avg_price ~ college_ds_no_na$Median.SAT)
+summary(lg.avg_price_SAT)
+
+cor(college_ds_no_na$Est_avg_price, college_ds_no_na$Median.SAT)
+cor(college_ds_no_na$Est_avg_price, college_ds_no_na$Median.ACT)
+
+scatter.smooth(college_ds_no_na$Est..price.2019.20.with.avg..grant, college_ds_no_na$Median.SAT)
+scatter.smooth(college_ds_no_na$Est..price.2019.20.with.avg..grant, college_ds_no_na$Median.ACT)
+cor(college_ds_no_na$Est..price.2019.20.with.avg..grant, college_ds_no_na$Median.SAT)
+cor(college_ds_no_na$Est..price.2019.20.with.avg..grant, college_ds_no_na$Median.ACT)
+
+
+scatter.smooth(college_ds_no_na$Est_avg_price, college_ds_no_na$X..of.students.who.get.any.grants)
+cor(college_ds_no_na$Est_avg_price, college_ds_no_na$X..of.students.who.get.any.grants)
+
+# 0.3689321
+scatter.smooth(log(college_ds$Est_grant), (college_ds$Early.career.earnings))
+cor(log(college_ds$Est_grant), (college_ds$Early.career.earnings))
+
+get_score <- function(df) {
+  score = df$Est_avg_price
+}
+```
+
+```{r}
+hist(college_ds$Est_avg_price)
+boxplot(college_ds$Est_avg_price)
+
+hist(college_ds$Median.SAT)
+boxplot(college_ds$Median.SAT)
 ```
 

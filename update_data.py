@@ -30,6 +30,11 @@ def upd_col_char_to_earnings():
     # remove symbols like % or $ in number data (from Median SAT columns to
     # Early career earnings)
     reform.process_matrix(data, reform.make_number, range(3,10))
+
+    # Add whether the school is public or private on the last column (right of early career earnings)
+    public_dict = reform.retrieve_public_dict("data/old_earning.csv")
+    reform.split_column_adv(data, 9, [1, 9],lambda x: (x[1], "is public"),
+                        lambda earning: (earning[1], public_dict.get(earning[0], "NA")))
     # Save it as project_data.csv
     retrieve_data.serialize_list(data, data_fname = "project_data.csv")
     return data
