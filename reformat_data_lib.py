@@ -123,15 +123,16 @@ def split_column(matrix, column_index,
     the values will be assigned as (left, right) of first_row_split_func for
     the first row, and of split_func for the other rows.
     """
+    spl_func = first_row_split_func
     for r in range(len(matrix)):
-        # spl_func is first row split if r == 0 (first row), normal split func
-        # otherwise.
-        spl_func = first_row_split_func if r == 0 else split_func
         left, right = spl_func(matrix[r][column_index])
         # Insert the @left to the inserted index
         matrix[r].insert(column_index, left)
         # Assign the right (which is storing unsplited string) to be @right
         matrix[r][column_index+1] = right
+        # spl_func is first row split if r == 0 (first row), normal split func
+        # otherwise.
+        spl_func = split_func
     return matrix[r]
 
 

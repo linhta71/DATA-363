@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # It is important that each sanbox section should be documented of its purpose and methods, and should not spam the whole document (use filter, head, tail, etc.).
 
 # The dataset of info on colleges listed
-(college_ds = read.csv("data/project_data.csv"))
+(college_ds = read.csv("data/project_data_.csv"))
 
 # Creating blocks with include=FALSE can make space to leave comments per section, like this one.
 ```
@@ -156,6 +156,34 @@ hist((college_ds$X..of.students.who.get.any.grants)^2.1)
 ```
 
 ```{r}
+lg.SAT_ece = lm(college_ds_no_na$Early.career.earnings ~ college_ds_no_na$Median.SAT)
+# summary(lg.SAT_ece)
+lg.ACT_ece = lm(college_ds_no_na$Early.career.earnings ~ college_ds_no_na$Median.ACT)
+# summary(lg.ACT_ece)
+
+plot(college_ds_no_na$Median.SAT, college_ds_no_na$Early.career.earnings, xlab = "Median SAT score", ylab = "Early career earning (* $10^4)")
+par(new = FALSE)
+pred_sat_ece = predict(lg.SAT_ece)
+points(x = college_ds_no_na$Median.SAT, y = pred_sat_ece, type = "l", col = "red", xlab = "Median SAT score", ylab = "Early career earning (* $10^4)")
+
+plot(college_ds_no_na$Median.ACT, college_ds_no_na$Early.career.earnings, xlab = "Median ACT score", ylab = "Early career earning (* $10^4)")
+par(new = FALSE)
+pred_act_ece = predict(lg.ACT_ece)
+points(x = college_ds_no_na$Median.ACT, y = pred_act_ece, type = "l", col = "red", xlab = "Median ACT score", ylab = "Early career earning (* $10^4)")
+
+summary(lg.SAT_ece)
+summary(lg.ACT_ece)
+lg.SAT_ACT_ece = lm(college_ds_no_na$Early.career.earnings ~ college_ds_no_na$Median.ACT + college_ds_no_na$Median.SAT)
+summary(lg.SAT_ACT_ece)
+lg.scaled_SAT_ACT_ece = lm(college_ds_no_na$Early.career.earnings ~ (pred_act_ece) + pred_sat_ece)
+summary(lg.scaled_SAT_ACT_ece)
+plot(college_ds_no_na$Early.career.earnings, resid(lg.scaled_SAT_ACT_ece))
+plot(college_ds_no_na$Est_avg_price, resid(lg.scaled_SAT_ACT_ece))
+#plot(college_ds_no_na, resid(lg.scaled_SAT_ACT_ece))
+```
+
+
+```{r}
 scatter.smooth(college_ds_no_na$Est_avg_price, college_ds_no_na$Median.SAT)
 scatter.smooth(college_ds_no_na$Est_avg_price, college_ds_no_na$Median.ACT)
 lg.avg_price_SAT = lm(college_ds_no_na$Est_avg_price ~ college_ds_no_na$Median.SAT)
@@ -183,10 +211,67 @@ get_score <- function(df) {
 ```
 
 ```{r}
-hist(college_ds$Est_avg_price)
-boxplot(college_ds$Est_avg_price)
+hist(college_ds$Early.career.earnings, xlab = "early career earnings (x $1000)", main = "Early career earnings")
 
-hist(college_ds$Median.SAT)
+hist(college_ds$Median.SAT, xlab = "SAT score", main = "SAT score")
+hist(college_ds$Median.ACT, xlab = "ACT score", main = "ACT score")
+boxplot(college_ds$Early.career.earnings)
 boxplot(college_ds$Median.SAT)
+boxplot(college_ds$Median.ACT)
+```
+
+```{r}
+private_college = subset(college_ds_no_na, is.public == 0)
+cor(private_college$Median.ACT, private_college$Early.career.earnings)
+cor(private_college$Median.SAT, private_college$Early.career.earnings)
+hist(private_college$Early.career.earnings)
+hist(private_college$Median.ACT)
+hist(private_college$Median.SAT)
+public_college = subset(college_ds_no_na, is.public == 1)
+cor(public_college$Median.ACT, public_college$Early.career.earnings)
+cor(public_college$Median.SAT, public_college$Early.career.earnings)
+hist(public_college$Early.career.earnings)
+hist(public_college$Median.ACT)
+hist(public_college$Median.SAT)
+
+
+```
+
+```{r}
+# Freq of private and public counterparts
+hist_gen <- function(red, blue, x_lab, title) {
+  x_bounds = c(min(min(red), min(blue)), max(max(red), max(blue)))
+  blue_data = hist(blue, plot = FALSE)
+  red_data = hist(red, plot = FALSE)
+  y_bounds = c(min(min(blue_data$density), min(red_data$density)), max(max(blue_data$density), max(red_data$density)))
+  print(sprintf("red sum: %f, blue sum: %f", sum(red_data$density), sum(blue_data$density)))
+  plot(blue_data$mids, blue_data$density, xlim=x_bounds, ylim = y_bounds,
+       xlab = x_lab, ylab = "probability", main = title, col = "blue", type = "l")
+  par(new = TRUE)
+  plot(red_data$mids, red_data$density, xlim = x_bounds, ylim = y_bounds,
+       xlab = x_lab, ylab = "probability", main = title, col = "red", type = "l")
+}
+hist_gen(private_college$Median.SAT, public_college$Median.SAT, "SAT score", "public (blue) vs private (red) SAT req")
+hist_gen(private_college$Median.ACT, public_college$Median.ACT, "ACT score", "public (blue) vs private (red) ACT req")
+hist_gen(private_college$Early.career.earnings, public_college$Early.career.earnings, "Early career earning (x $1000)", "public (blue) vs private (red) ECE")
+```
+
+```{r}
+plot(college_ds_no_na$Median.SAT, college_ds_no_na$Early.career.earnings, xlab = "Median SAT score", ylab = "Early career earning (* $10^4)")
+par(new = FALSE)
+pred_sat_ece = predict(lg.SAT_ece)
+points(x = college_ds_no_na$Median.SAT, y = pred_sat_ece, type = "l", col = "red", xlab = "Median SAT score", ylab = "Early career earning (* $10^4)")
+
+plot(college_ds_no_na$Median.SAT,resid(lg.SAT_ece), ylab = "residual", xlab = "MSAT", main = "Estimate residuals")
+
+hist_gen(pred_sat_ece, college_ds_no_na$Early.career.earnings, x_lab = "ECE (x $1000)", "predicted (red) vs data (blue) ECE histogram")
+
+# anova(lg.SAT_ece)
+summary(lg.SAT_ece)
+# anova(lg.ACT_ece)
+hist(resid(lg.SAT_ece))
+# t.test(resid(lg.SAT_ece),mu = 0, alternative = "t")
+anova(lg.SAT_ece)
+
 ```
 
